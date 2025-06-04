@@ -1,0 +1,81 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/Dev/Motion Joystick Server-Side Proj/ServerGravityJoystick/Servidor.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": false
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/Dev/Motion Joystick Server-Side Proj/ServerGravityJoystick/icon/icon.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "Motion Joystick Receiver"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": true
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Dev/Motion Joystick Server-Side Proj/ServerGravityJoystick/IO/Localization;Localization/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Dev/Motion Joystick Server-Side Proj/ServerGravityJoystick/icon;icon/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Dev/Motion Joystick Server-Side Proj/ServerGravityJoystick/Driver;Driver/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Dev/Motion Joystick Server-Side Proj/ServerGravityJoystick/vgamepad;vgamepad/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": "--contents-directory \".\" --hidden-import plyer.platforms.win.notification"
+ }
+}
