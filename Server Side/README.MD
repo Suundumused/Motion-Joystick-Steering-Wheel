@@ -4,6 +4,7 @@
 
 ### [Download Windows Receiver](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/releases)
 -  **Download and install third-party** [DRIVER](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/tree/main/Server%20Side/Driver) **manually if there are problems with automatic installation.**
+-  **Download this receiver only from here**, on other sites if there are copies that may have been modified and contain malware.
 
 ## Technical sheet
 
