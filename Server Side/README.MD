@@ -18,6 +18,7 @@ The mobile being connected to the 5G network is highly recommended.:
 
 -  **Desktop and mobile must be on the same network.**
 -  **Enter the IP that is appearing in the Windows Server's "Listening set to" area on the mobile.**
+
 ![receiver](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Screenshot%202025-06-04%20154453.png)
 -  **Driver is installed automatically on first run.**
 -  **In games, set the virtual joystick as the controller. It will appear as Xbox 360 Controller**
@@ -28,5 +29,3 @@ The mobile being connected to the 5G network is highly recommended.:
 
 ![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
 ![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
-
-![a3](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Screenshot%202025-06-04%20152230.png)

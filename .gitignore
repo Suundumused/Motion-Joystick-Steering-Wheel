@@ -161,10 +161,10 @@ venv.bak/
 .ropeproject
 
 # PyCharm
-# .idea/
+.idea/
 
 # Visual Studio Code
-# .vscode/
+.vscode/
 
 # Abstra
 .abstra/
@@ -260,10 +260,12 @@ publish/
 *.Publish.xml
 *.pubxml
 *.azurePubxml
+*.pubxml.user
 
 # NuGet
 packages/
 !packages/repositories.config
+**/NuGet.Config
 
 # Azure
 csx/
@@ -302,3 +304,47 @@ $RECYCLE.BIN/
 
 # NCrunch
 _NCrunch*
+
+# =========================
+# MAUI Android - Sensitive Auth/ID Files
+# =========================
+
+# Keystore & signing files
+*.keystore
+*.jks
+*.pem
+*.pfx
+*.key
+*.cer
+*.crt
+
+# Keystore-related config
+**/Properties/AndroidKeyStore.*
+**/Platforms/Android/keystore.properties
+**/Platforms/Android/*.keystore
+**/Platforms/Android/key.properties
+debug.keystore
+
+# Secrets
+secrets.json
+**/secrets.json
+**/*.secrets.json
+**/*.config.user
+**/*.settings.user
+
+# .NET user secrets and IDE settings
+**/.vs/
+**/.vscode/
+**/.idea/
+
+# Environment-specific
+.env.*
+.env
+
+# Publish profiles with sensitive data
+**/Properties/PublishProfiles/*
+
+# Mac provisioning profiles
+**/*.mobileprovision
+**/*.provisionprofile
+**/*.xcuserstate
