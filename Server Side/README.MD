@@ -30,3 +30,22 @@ The mobile being connected to the 5G network is highly recommended.:
 
 ![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
 ![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
+
+## App Features
+### 🔌 Connection
+- **UDP Protocol** — Fast and lightweight communication.
+- **Data Loss Management** — Ensures stable binary input stream.
+- **Multiple Clients** — Connect several devices simultaneously (4).
+- **Reconnection** — Auto-reconnect on network loss.
+
+### 🎛️ Filters
+- **Maximum Yaw Roll Control**
+- **Roll Smoothing Control**
+
+### 🖥️ Graphical Interface
+- **UI** — Intuitive and responsive design.
+- **Start Hidden** — Runs in the background if needed.
+
+### 🧰 Additional Options
+- **Reset to Default** — Restore all settings.
+- **Exit** — Close the app.
