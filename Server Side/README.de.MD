@@ -2,7 +2,7 @@
 ![BeautifulUI Logo](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Server%20Side/icon/icon.ico)
 
 ### [Windows Receiver herunterladen](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/releases)
-- **Laden Sie den Drittanbieter-Treiber herunter und installieren Sie ihn manuell, falls Probleme mit der automatischen Installation auftreten.**
+- **Laden Sie den [Drittanbieter-Treiber herunter](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/tree/main/Server%20Side/Driver) und installieren Sie ihn manuell, falls Probleme mit der automatischen Installation auftreten.**
 - **Laden Sie diesen Receiver nur von hier herunter** oder von [UpToDown](https://gravity-joystick-receiver.br.uptodown.com/windows) oder von anderen Websites, falls Kopien vorhanden sind, die möglicherweise verändert wurden und Malware enthalten.
 
 ## Technisches Datenblatt
