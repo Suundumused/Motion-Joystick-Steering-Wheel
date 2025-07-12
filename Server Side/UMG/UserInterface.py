@@ -61,6 +61,9 @@ class UI:
        self.SmoothLabelValue.configure(text = str(round(value * 100)))
 
        self.addr_schedule_save()
+       
+    def on_entry_text_changed(self, _):
+        self.addr_schedule_save()
     
     def addr_schedule_reset(self):
         if not self.schedule_save_task and not self.schedule_reset_task:
@@ -121,7 +124,10 @@ class UI:
             self.masterVariaveis.data['Sensibility'] = self.slider.get()
             self.masterVariaveis.data['Start_Hidden'] = self.switch_1.get()
             
-            self.masterVariaveis.data['ServerPort'] = self.PORT.get()
+            if self.masterVariaveis.data['ServerPort'] != self.PORT.get():
+                self.masterVariaveis.data['ServerPort'] = self.PORT.get()
+                
+                ctypes.windll.user32.MessageBoxW(0, texts['restart_desc'], texts['warning'], self.MB_ICONWARNING | self.MB_OK)
             
             if self.masterVariaveis.data['ServerIP'] != self.IP.get():
                 self.masterVariaveis.data['ServerIP'] = self.IP.get()
@@ -239,7 +245,7 @@ class UI:
         
         self.root = root
         self.root.protocol("WM_DELETE_WINDOW", lambda: self.onClose())
-        self.root.title(f"{texts['title2']} V2.2.0")
+        self.root.title(f"{texts['title2']} V2.2.1")
         
         self.masterVariaveis.UI = self.root
         self.masterVariaveis.main_UI = self
@@ -268,16 +274,21 @@ class UI:
         
         self.IP = customtkinter.CTkEntry(master = self.frame, placeholder_text="0.0.0.0", justify="right")
         self.IP.pack(pady=12, padx=(10,1), side = "left", expand=True, fill="x")
-                                
+       
         self.IP.insert(0, self.masterVariaveis.data['ServerIP'])
+        self.IP.bind("<Return>", self.on_entry_text_changed)
         
         self.dott = customtkinter.CTkLabel(master = self.frame, text=":", font = ("Roboto", 18))
         self.dott.pack(pady=12, padx=1, side = "left")
+        
+        self.button_sv = customtkinter.CTkButton(master=self.frame, border_width=0, corner_radius=8, text='OK', command = self.addr_schedule_save)
+        self.button_sv.pack(pady=12, padx=(1,10), expand=False, fill="x", side = 'right')
         
         self.PORT = customtkinter.CTkEntry(master = self.frame, placeholder_text="3470")
         self.PORT.pack(pady=12, padx=(1,10), side = "right", expand=False, fill="x")
         
         self.PORT.insert(0, self.masterVariaveis.data['ServerPort'])
+        self.PORT.bind("<Return>", self.on_entry_text_changed)
         
         self.frameC = self.frame = customtkinter.CTkFrame(master=self.root)
         self.frameC.pack(pady=(20,12), padx=60, fill="both", expand=True)

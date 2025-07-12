@@ -23,13 +23,6 @@
 - **驱动程序在首次运行时会自动安装。**
 - **在游戏中，将虚拟摇杆设置为控制器。它将显示为 Xbox 360 控制器**
 
-### 如果您的电脑内置 WI-FI 无线功能，建议您执行以下操作：
-
-- 激活 Windows WI-FI 热点并将手机直接连接到该热点，这样智能手机即可直接连接到电脑，无需通过调制解调器或路由器。显著降低延迟。
-
-![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
-![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
-
 ## 应用功能
 ### 🔌 连接
 - **UDP 协议** — 快速轻量级通信。

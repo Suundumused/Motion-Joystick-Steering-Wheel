@@ -24,13 +24,6 @@ The mobile being connected to the 5G network is highly recommended.:
 -  **Driver is installed automatically on first run.**
 -  **In games, set the virtual joystick as the controller. It will appear as Xbox 360 Controller**
 
-### If your PC has a built-in WI-FI radio, the following is recommended:
-
-- Activate the Windows WI-FI hotspot and connect your cell phone directly to it, it will allow a direct connection from the smartphone to the PC without going through a modem or router. Significantly reduces latency.
-
-![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
-![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
-
 ## App Features
 ### 🔌 Connection
 - **UDP Protocol** — Fast and lightweight communication.

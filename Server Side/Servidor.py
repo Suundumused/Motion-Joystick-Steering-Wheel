@@ -325,6 +325,7 @@ class UDPProtocol(asyncio.DatagramProtocol):
 
 async def main(ServerAdd, Variaveis):
     MB_ICONERROR = 0x10
+    MB_ICONWARNING = 0x30
     MB_OK = 0x0
     
     while Variaveis.data['ServerIP'] == "0.0.0.x":
@@ -348,6 +349,8 @@ async def main(ServerAdd, Variaveis):
                 Variaveis.MasterIP = server_ip
                 
                 s.close()
+        else:
+            Variaveis.MasterIP = server_ip
                 
         Variaveis.ServerIP = server_ip
         Variaveis.ServerPort = server_port
@@ -375,7 +378,10 @@ async def main(ServerAdd, Variaveis):
             print("UDP Server stopped.")
             
     except Exception as e:
+        Variaveis.main_UI.addr_schedule_reset()
+        
         ctypes.windll.user32.MessageBoxW(0, repr(e), texts['error'], MB_ICONERROR | MB_OK)
+        ctypes.windll.user32.MessageBoxW(0, texts['restart_desc'], texts['warning'], MB_ICONWARNING | MB_OK)
         
     finally:
         # Clean up any remaining clients if the server stops

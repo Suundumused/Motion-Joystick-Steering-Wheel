@@ -1,4 +1,4 @@
-Receptor de joystick de movimiento
+# Receptor de joystick de movimiento
 ![Logotipo de BeautifulUI](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Server%20Side/icon/icon.ico)
 
 ### [Descargar el receptor de Windows](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/releases)
@@ -22,13 +22,6 @@ Se recomienda encarecidamente que el móvil esté conectado a la red 5G.
 ![receiver](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Screenshot%202025-06-04%20154453.png)
 - **El controlador se instala automáticamente al iniciar el juego por primera vez.**
 - **En los juegos, configura el joystick virtual como mando. Aparecerá como un control de Xbox 360**
-
-### Si tu PC tiene Wi-Fi integrado, se recomienda lo siguiente:
-
-- Activa el punto de acceso Wi-Fi de Windows y conecta tu celular directamente. Esto permitirá una conexión directa desde el smartphone al PC sin necesidad de módem ni router. Reduce significativamente la latencia.
-
-![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
-![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
 
 ## Características de la app
 ### 🔌 Conexión

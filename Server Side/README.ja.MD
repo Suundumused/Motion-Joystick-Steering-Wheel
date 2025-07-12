@@ -23,13 +23,6 @@
 - **ドライバーは初回起動時に自動的にインストールされます。**
 - **ゲームでは、仮想ジョイスティックをコントローラーとして設定してください。 Xbox 360 コントローラーとして表示されます**
 
-### PC に Wi-Fi 無線が内蔵されている場合は、以下の手順をお勧めします。
-
-- Windows Wi-Fi ホットスポットを有効にし、スマートフォンを直接接続します。これにより、モデムやルーターを経由せずにスマートフォンから PC に直接接続できます。遅延が大幅に軽減されます。
-
-![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
-![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
-
 ## アプリの機能
 ### 🔌 接続
 - **UDP プロトコル** — 高速で軽量な通信。

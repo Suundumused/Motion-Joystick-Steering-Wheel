@@ -9,5 +9,6 @@
 | 🇯🇵 日本語 | [日本語](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.ja.MD) |
 | 🇮🇹 Italiano | [Italiano](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.it.MD) |
 | 🇩🇪 Deutsch | [Deutsch](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.de.MD) |
+| 🇫🇷 Français | [Français](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.fr.MD) |
 | 🇧🇷 Português (Brasil) | [Português](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.pt-br.MD) |
 | 🇮🇳 हिंदी | [हिंदी](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.hi.MD) |

@@ -23,13 +23,6 @@ Es wird dringend empfohlen, das Mobilgerät mit dem 5G-Netz zu verbinden.
 - **Der Treiber wird beim ersten Start automatisch installiert.**
 - **In Spielen den virtuellen Joystick als Controller festlegen. Es wird als Xbox 360 Controller angezeigt**
 
-### Falls Ihr PC über ein integriertes WLAN-Radio verfügt, empfehlen wir Folgendes:
-
-- Aktivieren Sie den Windows WLAN-Hotspot und verbinden Sie Ihr Mobiltelefon direkt damit. Dadurch wird eine direkte Verbindung vom Smartphone zum PC ohne Umweg über Modem oder Router hergestellt. Die Latenz wird dadurch deutlich reduziert.
-
-![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
-![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
-
 ## App-Funktionen
 ### 🔌 Verbindung
 - **UDP-Protokoll** – Schnelle und einfache Kommunikation.

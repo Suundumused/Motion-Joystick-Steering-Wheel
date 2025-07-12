@@ -5,7 +5,7 @@ import locale
 import ctypes
 
 
-available_languages = ('en', 'de', 'es', 'it', 'ja', 'ru', 'zh')
+available_languages = ('en', 'de', 'es', 'it', 'ja', 'ru', 'zh', 'pt', 'hi', 'fr')
 
 class CurrentLocalization:
     def __init__(self, db_path: str):

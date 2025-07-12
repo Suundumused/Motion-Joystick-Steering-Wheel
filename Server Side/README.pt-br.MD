@@ -23,13 +23,6 @@
 - **O driver é instalado automaticamente na primeira execução.**
 - **Em jogos, defina o joystick virtual como controle. Aparecerá como um Controle do Xbox 360**
 
-### Se o seu PC tiver um rádio Wi-Fi integrado, recomenda-se o seguinte:
-
-- Ative o hotspot Wi-Fi do Windows e conecte seu celular diretamente a ele. Isso permitirá uma conexão direta do smartphone com o PC sem precisar passar por um modem ou roteador. Reduz significativamente a latência.
-
-![Hostspot](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/scrshot2.png)
-![Hostspo2](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/windows101.jpg)
-
 ## Recursos do Aplicativo
 ### 🔌 Conexão
 - **Protocolo UDP** — Comunicação rápida e leve.
