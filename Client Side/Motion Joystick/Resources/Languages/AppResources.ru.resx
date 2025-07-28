@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>О</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Запуск</value>
+  </data>
+  <data name="Connected_to" xml:space="preserve">
+    <value>Отправка пакетов на</value>
+  </data>
+  <data name="Connection_Error" xml:space="preserve">
+    <value>Ошибка подключения</value>
+  </data>
+  <data name="Connection_Lost" xml:space="preserve">
+    <value>Соединение потеряно</value>
+  </data>
+  <data name="Connection_to" xml:space="preserve">
+    <value>Попытка подключения завершилась по тайм-ауту.</value>
+  </data>
+  <data name="ConstantAcceleration" xml:space="preserve">
+    <value>Постоянное ускорение</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Прекратить отправку</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Failed_tocon" xml:space="preserve">
+    <value>Не удалось подключиться после нескольких попыток</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Дом</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>См. инструкции по подключению к Windows.</value>
+  </data>
+  <data name="Invalid_IP_address" xml:space="preserve">
+    <value>Недопустимый IP-адрес.</value>
+  </data>
+  <data name="Invalid_port" xml:space="preserve">
+    <value>Недопустимый порт</value>
+  </data>
+  <data name="Inverted_Joystick" xml:space="preserve">
+    <value>Инвертированный джойстик</value>
+  </data>
+  <data name="Motion_Joystick" xml:space="preserve">
+    <value>Джойстик движения</value>
+  </data>
+  <data name="Not_Con" xml:space="preserve">
+    <value>Не подключено к серверу</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Порт</value>
+  </data>
+  <data name="Refresh_Rate_Label" xml:space="preserve">
+    <value>Частота обновления</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="Server_IP_Address" xml:space="preserve">
+    <value>IP-адрес сервера</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Settings_Value_Label" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="Setup" xml:space="preserve">
+    <value>Подключение</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>Снижение нижних частот</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Успешно</value>
+  </data>
+  <data name="template1des" xml:space="preserve">
+    <value>В этой модели все кнопки и рычаги расположены по краям экрана.</value>
+  </data>
+  <data name="template2des" xml:space="preserve">
+    <value>Похоже на стандартную модель, но с бинарными кнопками в инвертированных позициях.</value>
+  </data>
+  <data name="template3des" xml:space="preserve">
+    <value>Идеально для комфортного вождения, полуавтоматическое переключение передач.</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Шаблоны</value>
+  </data>
+  <data name="template_def1" xml:space="preserve">
+    <value>Шаблон по умолчанию — Полный и широкий</value>
+  </data>
+  <data name="template_def2" xml:space="preserve">
+    <value>Шаблон по умолчанию — Полный и широкий (Инвертированные накладки)</value>
+  </data>
+  <data name="template_def3" xml:space="preserve">
+    <value>Последовательный режим по умолчанию — Автомобильный</value>
+  </data>
+  <data name="Trying to reconnect" xml:space="preserve">
+    <value>Пытаемся переподключиться...</value>
+  </data>
+  <data name="T_Instructions" xml:space="preserve">
+    <value>Инструкции</value>
+  </data>
+  <data name="TriggerSensitivity" xml:space="preserve">
+    <value>Чувствительность триггера</value>
+  </data>
+  <data name="template_def4" xml:space="preserve">
+    <value>Последовательность по умолчанию — Автомобиль с указателем поворота</value>
+  </data>
+  <data name="template4des" xml:space="preserve">
+    <value>Похоже на последовательность по умолчанию, но с правым аналоговым стиком вместо D-Pad.</value>
+  </data>
+  <data name="gyro_not_supported" xml:space="preserve">
+    <value>Устройство не поддерживает гироскоп. Проверьте заряд батареи или технические характеристики производителя.</value>
+  </data>
+  <data name="template_def5" xml:space="preserve">
+    <value>Последовательный - Автомобильный RT/LT разделен</value>
+  </data>
+  <data name="template_def6" xml:space="preserve">
+    <value>Последовательный - Автомобильный RT/LT с направленным</value>
+  </data>
+  <data name="template_def7" xml:space="preserve">
+    <value>Руководство по умолчанию - Автомобильная промышленность</value>
+  </data>
+  <data name="template_def8" xml:space="preserve">
+    <value>Руководство по умолчанию - Автомобильный, односторонний RT/LT</value>
+  </data>
+  <data name="template_def9" xml:space="preserve">
+    <value>Авиатор по умолчанию</value>
+  </data>
+  <data name="template_def10" xml:space="preserve">
+    <value>Авиатор по умолчанию - перевернутые кнопки на лице</value>
+  </data>
+  <data name="template_def11" xml:space="preserve">
+    <value>Авиатор - с объединенными RT/LT</value>
+  </data>
+  <data name="template_def12" xml:space="preserve">
+    <value>Aviator RT/LT — кнопки с перевернутым лицом</value>
+  </data>
+  <data name="template5des" xml:space="preserve">
+    <value>Идеально подходит для комфортного вождения, полуавтоматическое переключение передач. С раздельными акселератором и тормозом.</value>
+  </data>
+  <data name="template6des" xml:space="preserve">
+    <value>Аналогично RT/LT Automotive Sequential, но с джойстиком вместо D-PAD</value>
+  </data>
+  <data name="template7des" xml:space="preserve">
+    <value>Идеально подходит для имитации ручного переключения передач автомобиля.</value>
+  </data>
+  <data name="template8des" xml:space="preserve">
+    <value>Аналогично стандартной механической коробке передач — автомобильной, но с акселератором и тормозом на одной стороне.</value>
+  </data>
+  <data name="template9des" xml:space="preserve">
+    <value>Идеальная модель для игр, связанных с авиацией, включая все кнопки в максимально возможном удобном пространстве.</value>
+  </data>
+  <data name="template10des" xml:space="preserve">
+    <value>То же, что и «Авиатор по умолчанию», но кнопки на лице поменяны местами.</value>
+  </data>
+  <data name="template11des" xml:space="preserve">
+    <value>Похож на Standard Aviator, но с комбинированными левым и правым курками.</value>
+  </data>
+  <data name="template12des" xml:space="preserve">
+    <value>Похож на Aviator RT/LT, но с перевернутыми кнопками на лицевой панели.</value>
+  </data>
+  <data name="abouttitle" xml:space="preserve">
+    <value>Проект с открытым исходным кодом</value>
+  </data>
+  <data name="abouttitle1" xml:space="preserve">
+    <value>Разъяснение настроек</value>
+  </data>
+  <data name="abouttitle2" xml:space="preserve">
+    <value>Частота обновления: Управляет тем, как часто в секунду данные акселерометра отправляются на компьютер.</value>
+  </data>
+  <data name="abouttitle3" xml:space="preserve">
+    <value>Снижение нижних частот: Определяет, насколько программа должна реагировать на неточности значений акселерометра. Более высокие значения — больше вибраций, очень низкие — эффект мёртвой зоны.</value>
+  </data>
+  <data name="abouttitle4" xml:space="preserve">
+    <value>Чувствительность триггеров: Управляет чувствительностью акселератора и тормоза RT/LT.</value>
+  </data>
+  <data name="abouttitle5" xml:space="preserve">
+    <value>Инвертированный джойстик: Переворачивает джойстик для игроков с разбитым экраном смартфона.</value>
+  </data>
+  <data name="abouttitle6" xml:space="preserve">
+    <value>Постоянное ускорение: При отпускании правого триггера положение не возвращается к нулю. Это также применяется к объединённым триггерам.</value>
+  </data>
+  <data name="abouttitle61" xml:space="preserve">
+    <value>Вибрация при взаимодействии: когда вы нажимаете и отпускаете кнопку или триггер, для подтверждения ввода включается легкая вибрация.</value>
+  </data>
+  <data name="abouttitle7" xml:space="preserve">
+    <value>Разъяснение ввода</value>
+  </data>
+  <data name="abouttitle8" xml:space="preserve">
+    <value>Работа левого аналогового стика и триггеров: Ввод определяется акселерометром и полосами прокрутки.</value>
+  </data>
+  <data name="repo" xml:space="preserve">
+    <value>Репозиторий</value>
+  </data>
+  <data name="by" xml:space="preserve">
+    <value>К</value>
+  </data>
+  <data name="opensourcelicenses" xml:space="preserve">
+    <value>Лицензии с открытым исходным кодом</value>
+  </data>
+  <data name="PowerSavingMode" xml:space="preserve">
+    <value>Режим энергосбережения</value>
+  </data>
+  <data name="Vibration" xml:space="preserve">
+    <value>Вибрация при взаимодействии</value>
+  </data>
+  <data name="app_name" xml:space="preserve">
+    <value>Джойстик движения</value>
+  </data>
+</root>

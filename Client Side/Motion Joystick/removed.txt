@@ -1,0 +1,2 @@
+Motion Joystick.csproj
+Platforms\Android\AndroidManifest.xml

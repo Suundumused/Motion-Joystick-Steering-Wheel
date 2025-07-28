@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>について</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="Connected_to" xml:space="preserve">
+    <value>パケットを送信中:</value>
+  </data>
+  <data name="Connection_Error" xml:space="preserve">
+    <value>接続エラー</value>
+  </data>
+  <data name="Connection_Lost" xml:space="preserve">
+    <value>接続が失われました</value>
+  </data>
+  <data name="Connection_to" xml:space="preserve">
+    <value>接続の試行がタイムアウトしました。</value>
+  </data>
+  <data name="ConstantAcceleration" xml:space="preserve">
+    <value>定加速度</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>送信を停止</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Failed_tocon" xml:space="preserve">
+    <value>複数回試行しましたが、接続に失敗しました</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>家</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>Windows への接続方法については手順を参照してください。</value>
+  </data>
+  <data name="Invalid_IP_address" xml:space="preserve">
+    <value>無効なIPアドレスです。</value>
+  </data>
+  <data name="Invalid_port" xml:space="preserve">
+    <value>無効なポートです</value>
+  </data>
+  <data name="Inverted_Joystick" xml:space="preserve">
+    <value>反転ジョイスティック</value>
+  </data>
+  <data name="Motion_Joystick" xml:space="preserve">
+    <value>モーションジョイスティック</value>
+  </data>
+  <data name="Not_Con" xml:space="preserve">
+    <value>サーバーに接続されていません</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>ポート</value>
+  </data>
+  <data name="Refresh_Rate_Label" xml:space="preserve">
+    <value>リフレッシュレート</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="Server_IP_Address" xml:space="preserve">
+    <value>サーバーの IP アドレス</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Settings_Value_Label" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="Setup" xml:space="preserve">
+    <value>接続 (せつぞく)</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>ローパス低減</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="template1des" xml:space="preserve">
+    <value>このモデルでは、すべてのボタンとレバーが画面の端に配置されています。</value>
+  </data>
+  <data name="template2des" xml:space="preserve">
+    <value>標準モデルに似ていますが、バイナリボタンが逆の位置にあります。</value>
+  </data>
+  <data name="template3des" xml:space="preserve">
+    <value>快適な運転に最適、セミオートマチック変速。</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>テンプレート</value>
+  </data>
+  <data name="template_def1" xml:space="preserve">
+    <value>デフォルトテンプレート - フルサイズ・ワイド</value>
+  </data>
+  <data name="template_def2" xml:space="preserve">
+    <value>デフォルトテンプレート - フル＆ワイド（反転パッド）</value>
+  </data>
+  <data name="template_def3" xml:space="preserve">
+    <value>デフォルトシーケンシャル - 自動車用</value>
+  </data>
+  <data name="Trying to reconnect" xml:space="preserve">
+    <value>再接続を試みています...</value>
+  </data>
+  <data name="T_Instructions" xml:space="preserve">
+    <value>説明書</value>
+  </data>
+  <data name="TriggerSensitivity" xml:space="preserve">
+    <value>トリガー感度</value>
+  </data>
+  <data name="template_def4" xml:space="preserve">
+    <value>デフォルトシーケンシャル - 方向指示付き車載用</value>
+  </data>
+  <data name="template4des" xml:space="preserve">
+    <value>デフォルトシーケンシャルに似ていますが、Dパッドの代わりに右アナログスティックを使用します。</value>
+  </data>
+  <data name="gyro_not_supported" xml:space="preserve">
+    <value>このデバイスはジャイロスコープをサポートしていません。バッテリー残量が十分か、または製造元の仕様を確認してください。</value>
+  </data>
+  <data name="template_def5" xml:space="preserve">
+    <value>シーケンシャル - 自動車用RT/LT分離</value>
+  </data>
+  <data name="template_def6" xml:space="preserve">
+    <value>シーケンシャル - 方向性のある自動車用RT/LT</value>
+  </data>
+  <data name="template_def7" xml:space="preserve">
+    <value>デフォルトマニュアル - 自動車</value>
+  </data>
+  <data name="template_def8" xml:space="preserve">
+    <value>デフォルトマニュアル - 自動車、片側RT/LT</value>
+  </data>
+  <data name="template_def9" xml:space="preserve">
+    <value>デフォルトのアビエイター</value>
+  </data>
+  <data name="template_def10" xml:space="preserve">
+    <value>デフォルトのアビエーター - 反転フェイスボタン</value>
+  </data>
+  <data name="template_def11" xml:space="preserve">
+    <value>アビエーター - RT/LT を統合</value>
+  </data>
+  <data name="template_def12" xml:space="preserve">
+    <value>Aviator RT/LT - 反転フェイスボタン</value>
+  </data>
+  <data name="template5des" xml:space="preserve">
+    <value>快適な運転に最適なセミオートマチックギアシフト。アクセルとブレーキが独立しています。</value>
+  </data>
+  <data name="template6des" xml:space="preserve">
+    <value>RT/LT Automotive Sequentialに似ていますが、D-PADの代わりに方向パッドが付いています。</value>
+  </data>
+  <data name="template7des" xml:space="preserve">
+    <value>車の手動ギア制御をシミュレートするのに最適です。</value>
+  </data>
+  <data name="template8des" xml:space="preserve">
+    <value>「Default Manual - Automotive」に似ていますが、アクセルとブレーキが片側にあります。</value>
+  </data>
+  <data name="template9des" xml:space="preserve">
+    <value>可能な限り広い快適なスペースにすべてのボタンを備えた、航空関連のゲームに最適なモデルです。</value>
+  </data>
+  <data name="template10des" xml:space="preserve">
+    <value>Default Aviator と同じですが、Face ボタンが逆になっています。</value>
+  </data>
+  <data name="template11des" xml:space="preserve">
+    <value>標準アビエイターと似ていますが、左トリガーと右トリガーが組み合わされています。</value>
+  </data>
+  <data name="template12des" xml:space="preserve">
+    <value>Aviator RT/LT と似ていますが、フェイス ボタンが逆になっています。</value>
+  </data>
+  <data name="abouttitle" xml:space="preserve">
+    <value>オープンソースプロジェクト</value>
+  </data>
+  <data name="abouttitle1" xml:space="preserve">
+    <value>設定の説明</value>
+  </data>
+  <data name="abouttitle2" xml:space="preserve">
+    <value>リフレッシュレート： 加速度センサーのデータが1秒間に何回コンピューターに送信されるかを制御します。</value>
+  </data>
+  <data name="abouttitle3" xml:space="preserve">
+    <value>ローパス削減： 加速度センサーの不正確さに対してソフトウェアがどの程度反応するかを制御します。値が高いと振動が多くなり、非常に低いとデッドゾーン効果が生じます。</value>
+  </data>
+  <data name="abouttitle4" xml:space="preserve">
+    <value>トリガー感度： RT/LTアクセルとブレーキの感度を制御します。</value>
+  </data>
+  <data name="abouttitle5" xml:space="preserve">
+    <value>反転ジョイスティック： 画面が壊れたスマートフォンを持つプレイヤーのために、ジョイスティックを逆にします。</value>
+  </data>
+  <data name="abouttitle6" xml:space="preserve">
+    <value>一定加速： 右トリガーを離しても、位置が0に戻りません。これは結合されたトリガーにも適用されます。</value>
+  </data>
+  <data name="abouttitle61" xml:space="preserve">
+    <value>操作時に振動: ボタンまたはトリガーを押して放すと、入力を確認するために軽い振動がトリガーされます。</value>
+  </data>
+  <data name="abouttitle7" xml:space="preserve">
+    <value>入力の説明</value>
+  </data>
+  <data name="abouttitle8" xml:space="preserve">
+    <value>左アナログスティックとトリガーの操作： 入力は加速度センサーとスクロールバーによって定義されます。</value>
+  </data>
+  <data name="repo" xml:space="preserve">
+    <value>リポジトリ</value>
+  </data>
+  <data name="by" xml:space="preserve">
+    <value>による</value>
+  </data>
+  <data name="opensourcelicenses" xml:space="preserve">
+    <value>オープンソースライセンス</value>
+  </data>
+  <data name="PowerSavingMode" xml:space="preserve">
+    <value>省電力モード</value>
+  </data>
+  <data name="Vibration" xml:space="preserve">
+    <value>操作時に振動する</value>
+  </data>
+  <data name="app_name" xml:space="preserve">
+    <value>モーションジョイスティック</value>
+  </data>
+</root>

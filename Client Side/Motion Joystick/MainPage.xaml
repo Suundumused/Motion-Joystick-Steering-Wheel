@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lang="clr-namespace:Motion_Joystick.Resources.Languages"
+             xmlns:nav="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+             xmlns:Common="clr-namespace:Motion_Joystick.Widgets.Common"
+             xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
+             mtk:TearDownBehavior.Cascade="True"
+             x:Class="Motion_Joystick.MainPage"
+             nav:NavigationPage.HasNavigationBar="False">
+    
+        <Grid IgnoreSafeArea="True" RowDefinitions="*,Auto,Auto" ColumnDefinitions="*">
+            <ScrollView
+                x:Name="MainScrollView"
+                Margin="10,0,10,0"
+                Grid.Row="0"
+                VerticalOptions="Center">
+
+                <VerticalStackLayout>
+                    <Image
+                            x:Name="Logo"
+                            Source="dotnet_bot.png"
+                            Aspect="AspectFit"
+                            SemanticProperties.Description="dot net bot in a race car number eight" />
+
+                    <Label
+                            Text="{x:Static lang:AppResources.Motion_Joystick}"
+                            Style="{StaticResource Headline}"
+                            SemanticProperties.HeadingLevel="Level1"
+                            Margin="0,0,0,15"
+                            TextColor="NavajoWhite"/>
+
+                    <Label
+                            Text="{x:Static lang:AppResources.Instructions}"
+                            Style="{StaticResource SubHeadline}"
+                            Margin="20,0,20,0"
+                            FontSize="21"/>
+
+                    <Button
+                            x:Name="CounterBtn"
+                            Margin="20,30,20,0"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Text="{x:Static lang:AppResources.T_Instructions}"
+                            TextColor="LightGoldenrodYellow"
+                            Clicked="OnCounterClicked"
+                            HorizontalOptions="Fill" />
+
+                    <Button
+                            x:Name="Setup"
+                            Margin="20,30,20,0"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Text="{x:Static lang:AppResources.Setup}"
+                            Clicked="OnOpenSetupClicked"
+                            HorizontalOptions="Fill" 
+                            BackgroundColor="LightGreen"/>
+
+                </VerticalStackLayout>
+            </ScrollView>
+            <ImageButton
+                Source="fix2emucon.png"
+                CornerRadius="50"
+                WidthRequest="100"
+                HeightRequest="100"
+                x:Name="AsTemplates"
+                Margin="20,30,20,0"
+                Clicked="OnOpenTemplatesClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Grid.Row="1"
+                BackgroundColor="DarkSlateGray"/>
+            <Common:NavBar HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="2"></Common:NavBar>
+        </Grid>
+</ContentPage>

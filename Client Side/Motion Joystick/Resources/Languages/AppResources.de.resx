@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Um</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Starten</value>
+  </data>
+  <data name="Connected_to" xml:space="preserve">
+    <value>Pakete senden an</value>
+  </data>
+  <data name="Connection_Error" xml:space="preserve">
+    <value>Verbindungsfehler</value>
+  </data>
+  <data name="Connection_Lost" xml:space="preserve">
+    <value>Verbindung verloren</value>
+  </data>
+  <data name="Connection_to" xml:space="preserve">
+    <value>Verbindungsversuch ist abgelaufen.</value>
+  </data>
+  <data name="ConstantAcceleration" xml:space="preserve">
+    <value>Konstante Beschleunigung</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Senden beenden</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="Failed_tocon" xml:space="preserve">
+    <value>Verbindung nach mehreren Versuchen fehlgeschlagen</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Heim</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>Anweisungen zum Herstellen einer Verbindung mit Windows finden Sie hier.</value>
+  </data>
+  <data name="Invalid_IP_address" xml:space="preserve">
+    <value>Ungültige IP-Adresse.</value>
+  </data>
+  <data name="Invalid_port" xml:space="preserve">
+    <value>Ungültiger Port</value>
+  </data>
+  <data name="Inverted_Joystick" xml:space="preserve">
+    <value>Umgekehrter Joystick</value>
+  </data>
+  <data name="Motion_Joystick" xml:space="preserve">
+    <value>Motion Joystick</value>
+  </data>
+  <data name="Not_Con" xml:space="preserve">
+    <value>Nicht mit dem Server verbunden</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="Refresh_Rate_Label" xml:space="preserve">
+    <value>Bildwiederholrate</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Zurücksetzen</value>
+  </data>
+  <data name="Server_IP_Address" xml:space="preserve">
+    <value>IP-Adresse des Servers</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Settings_Value_Label" xml:space="preserve">
+    <value>Wert</value>
+  </data>
+  <data name="Setup" xml:space="preserve">
+    <value>Verbindung</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>Tiefpassreduzierung</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Erfolg</value>
+  </data>
+  <data name="template1des" xml:space="preserve">
+    <value>Dieses Modell hat alle Tasten und Hebel an den Rändern des Bildschirms.</value>
+  </data>
+  <data name="template2des" xml:space="preserve">
+    <value>Ähnlich wie das Standardmodell, aber mit binären Tasten in umgekehrter Position.</value>
+  </data>
+  <data name="template3des" xml:space="preserve">
+    <value>Ideal für komfortables Fahren, halbautomatisches Schalten.</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Vorlagen</value>
+  </data>
+  <data name="template_def1" xml:space="preserve">
+    <value>Standardvorlage – Vollständig und Breit</value>
+  </data>
+  <data name="template_def2" xml:space="preserve">
+    <value>Standardvorlage – Voll und breit (Umgekehrte Pads)</value>
+  </data>
+  <data name="template_def3" xml:space="preserve">
+    <value>Standard-Sequenziell – Automobil</value>
+  </data>
+  <data name="Trying to reconnect" xml:space="preserve">
+    <value>Versuche, erneut zu verbinden...</value>
+  </data>
+  <data name="T_Instructions" xml:space="preserve">
+    <value>Anweisungen</value>
+  </data>
+  <data name="TriggerSensitivity" xml:space="preserve">
+    <value>Triggerempfindlichkeit</value>
+  </data>
+  <data name="template_def4" xml:space="preserve">
+    <value>Standard-Sequenziell – Automobil mit Blinker</value>
+  </data>
+  <data name="template4des" xml:space="preserve">
+    <value>Ähnlich wie Standard-Sequenziell, aber mit dem rechten Analogstick anstelle des Steuerkreuzes.</value>
+  </data>
+  <data name="gyro_not_supported" xml:space="preserve">
+    <value>Gerät unterstützt kein Gyroskop. Überprüfen Sie, ob genügend Akku vorhanden ist oder lesen Sie die technischen Daten des Herstellers.</value>
+  </data>
+  <data name="template_def5" xml:space="preserve">
+    <value>Sequentiell - Automotive RT/LT getrennt</value>
+  </data>
+  <data name="template_def6" xml:space="preserve">
+    <value>Sequentiell - Automotive RT/LT mit Richtungs</value>
+  </data>
+  <data name="template_def7" xml:space="preserve">
+    <value>Standardhandbuch – Automobilindustrie</value>
+  </data>
+  <data name="template_def8" xml:space="preserve">
+    <value>Standardmäßig manuell – Automotive, eine Seite RT/LT</value>
+  </data>
+  <data name="template_def9" xml:space="preserve">
+    <value>Standard-Aviator</value>
+  </data>
+  <data name="template_def10" xml:space="preserve">
+    <value>Standard-Aviator – Umgekehrte Gesichtstasten</value>
+  </data>
+  <data name="template_def11" xml:space="preserve">
+    <value>Aviator - mit kombiniertem RT/LT</value>
+  </data>
+  <data name="template_def12" xml:space="preserve">
+    <value>Aviator RT/LT – Tasten mit umgekehrter Vorderseite</value>
+  </data>
+  <data name="template5des" xml:space="preserve">
+    <value>Ideal für komfortables Fahren, halbautomatische Gangschaltung. Mit separatem Gaspedal und Bremse.</value>
+  </data>
+  <data name="template6des" xml:space="preserve">
+    <value>Ähnlich wie RT/LT Automotive Sequential, jedoch mit Steuerkreuz statt D-PAD</value>
+  </data>
+  <data name="template7des" xml:space="preserve">
+    <value>Ideal zum Simulieren der manuellen Gangschaltung eines Autos.</value>
+  </data>
+  <data name="template8des" xml:space="preserve">
+    <value>Ähnlich wie Standardhandbuch – Automotive, aber mit Gaspedal und Bremse auf einer Seite.</value>
+  </data>
+  <data name="template9des" xml:space="preserve">
+    <value>Ideales Modell für luftfahrtbezogene Spiele, einschließlich aller Tasten im größtmöglichen komfortablen Bereich.</value>
+  </data>
+  <data name="template10des" xml:space="preserve">
+    <value>Dasselbe wie Default Aviator, aber mit umgekehrten Gesichtstasten.</value>
+  </data>
+  <data name="template11des" xml:space="preserve">
+    <value>Ähnlich wie der Standard Aviator, aber mit kombinierten linken und rechten Auslösern.</value>
+  </data>
+  <data name="template12des" xml:space="preserve">
+    <value>Ähnlich wie Aviator RT/LT, aber mit umgekehrten Fronttasten.</value>
+  </data>
+  <data name="abouttitle" xml:space="preserve">
+    <value>Ein Open-Source-Projekt</value>
+  </data>
+  <data name="abouttitle1" xml:space="preserve">
+    <value>Klarstellung der Einstellungen</value>
+  </data>
+  <data name="abouttitle2" xml:space="preserve">
+    <value>Aktualisierungsrate: Steuert, wie oft pro Sekunde die Beschleunigungsdaten an den Computer gesendet werden.</value>
+  </data>
+  <data name="abouttitle3" xml:space="preserve">
+    <value>Tiefpass-Reduktion: Bestimmt, wie stark die Software auf Ungenauigkeiten in den Beschleunigungswerten reagieren soll. Höhere Werte bedeuten mehr Vibration, sehr niedrige Werte erzeugen einen Totzone-Effekt.</value>
+  </data>
+  <data name="abouttitle4" xml:space="preserve">
+    <value>Auslöser-Empfindlichkeit: Steuert die Empfindlichkeit des RT/LT-Gaspedals und der Bremse.</value>
+  </data>
+  <data name="abouttitle5" xml:space="preserve">
+    <value>Umgekehrter Joystick: Dreht den Joystick um, für Spieler mit einem Smartphone mit kaputtem Bildschirm.</value>
+  </data>
+  <data name="abouttitle6" xml:space="preserve">
+    <value>Konstante Beschleunigung: Beim Loslassen des rechten Triggers kehrt dessen Position nicht auf Punkt 0 zurück. Dies gilt auch für gekoppelte Trigger.</value>
+  </data>
+  <data name="abouttitle61" xml:space="preserve">
+    <value>Bei Interaktion vibrieren: Wenn Sie eine Taste oder einen Auslöser drücken und loslassen, wird zur Bestätigung der Eingabe eine leichte Vibration ausgelöst.</value>
+  </data>
+  <data name="abouttitle7" xml:space="preserve">
+    <value>Klarstellung der Eingaben</value>
+  </data>
+  <data name="abouttitle8" xml:space="preserve">
+    <value>Betrieb des linken Analogsticks und der Trigger: Die Eingabe wird durch den Beschleunigungssensor und die Bildlaufleisten definiert.</value>
+  </data>
+  <data name="repo" xml:space="preserve">
+    <value>Archiv</value>
+  </data>
+  <data name="by" xml:space="preserve">
+    <value>Von</value>
+  </data>
+  <data name="opensourcelicenses" xml:space="preserve">
+    <value>Open Source-Lizenzen</value>
+  </data>
+  <data name="PowerSavingMode" xml:space="preserve">
+    <value>Energiesparmodus</value>
+  </data>
+  <data name="Vibration" xml:space="preserve">
+    <value>Bei Interaktion vibrieren</value>
+  </data>
+  <data name="app_name" xml:space="preserve">
+    <value>Motion Joystick</value>
+  </data>
+</root>

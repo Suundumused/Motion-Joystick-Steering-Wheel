@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Common="clr-namespace:Motion_Joystick.Widgets.Common"
+             xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
+            mtk:TearDownBehavior.Cascade="True"
+             x:Class="Motion_Joystick.Routes.AsConnection.SetupConnection"
+             xmlns:lang="clr-namespace:Motion_Joystick.Resources.Languages"
+             Title="{x:Static lang:AppResources.Setup}">
+
+    <Grid RowDefinitions="*,Auto" IgnoreSafeArea="True">
+        <ScrollView x:Name="scroll_view"  VerticalScrollBarVisibility="Always">
+            <VerticalStackLayout Padding="30,0" Spacing="25" Grid.Row="0">
+                <Image
+                    x:Name="Logo"
+                    Source="dotnet_bot.png"
+                    Aspect="AspectFit"/>
+
+                <Label Text="UDP" FontAttributes="Bold" HorizontalOptions="Center" FontSize="28" TextColor="Chartreuse"/>
+                <Label Text="{x:Static lang:AppResources.Server_IP_Address}" FontAttributes="Bold" />
+
+                <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                    <Entry x:Name="IpBox1" Keyboard="Numeric" MaxLength="3" WidthRequest="50"
+                        TextChanged="OnIpPartChanged" FontSize="16" Text="192"/>
+                    <Label Text="." VerticalOptions="Center" />
+                    <Entry x:Name="IpBox2" Keyboard="Numeric" MaxLength="3" WidthRequest="50"
+                        TextChanged="OnIpPartChanged" FontSize="16" Text="168"/>
+                    <Label Text="." VerticalOptions="Center" />
+                    <Entry x:Name="IpBox3" Keyboard="Numeric" MaxLength="3" WidthRequest="50"
+                        TextChanged="OnIpPartChanged" FontSize="16" Text="1"/>
+                    <Label Text="." VerticalOptions="Center" />
+                    <Entry x:Name="IpBox4" Keyboard="Numeric" MaxLength="3" WidthRequest="50"
+                        TextChanged="OnIpPartChanged" FontSize="16" Text="2"/>
+                </HorizontalStackLayout>
+
+                <Label Text="{x:Static lang:AppResources.Port}" FontAttributes="Bold" />
+                <Entry x:Name="PortEntry"
+                    Placeholder="e.g., 8080"
+                    Keyboard="Numeric"
+                    FontSize="16"
+                    Text="3470" />
+
+                <Button x:Name="ConnectBTN" Text="{x:Static lang:AppResources.Connect}"
+                    Clicked="OnConnectClicked"
+                    Style="{StaticResource GlassButtonStyle}"
+                    BackgroundColor="LightGreen" />
+
+                <Label x:Name="PingLabel" Text="" TextColor="LightGreen">
+                </Label>
+
+            </VerticalStackLayout>
+        </ScrollView>
+        <Common:NavBar HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="1"></Common:NavBar>
+    </Grid>
+</ContentPage>

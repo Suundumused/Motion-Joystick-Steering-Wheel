@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Platforms/Android/Resources/values/strings.xml -->
+<resources>
+	<string name="app_name">運動搖桿</string>
+</resources>

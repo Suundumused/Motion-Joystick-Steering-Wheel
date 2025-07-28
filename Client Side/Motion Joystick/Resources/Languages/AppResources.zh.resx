@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>關於</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="Connected_to" xml:space="preserve">
+    <value>正在发送数据包到</value>
+  </data>
+  <data name="Connection_Error" xml:space="preserve">
+    <value>連線錯誤</value>
+  </data>
+  <data name="Connection_Lost" xml:space="preserve">
+    <value>連線已中斷</value>
+  </data>
+  <data name="Connection_to" xml:space="preserve">
+    <value>連線嘗試已逾時。</value>
+  </data>
+  <data name="ConstantAcceleration" xml:space="preserve">
+    <value>恆定加速度</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>停止发送</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Failed_tocon" xml:space="preserve">
+    <value>多次重試後仍無法連線</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>家</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>請參閱如何連接到 Windows 的說明。</value>
+  </data>
+  <data name="Invalid_IP_address" xml:space="preserve">
+    <value>無效的 IP 位址。</value>
+  </data>
+  <data name="Invalid_port" xml:space="preserve">
+    <value>無效的連接埠</value>
+  </data>
+  <data name="Inverted_Joystick" xml:space="preserve">
+    <value>反轉搖桿</value>
+  </data>
+  <data name="Motion_Joystick" xml:space="preserve">
+    <value>運動搖桿</value>
+  </data>
+  <data name="Not_Con" xml:space="preserve">
+    <value>未連接到伺服器</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>通訊埠</value>
+  </data>
+  <data name="Refresh_Rate_Label" xml:space="preserve">
+    <value>更新率</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Server_IP_Address" xml:space="preserve">
+    <value>伺服器 IP 位址</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Settings_Value_Label" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="Setup" xml:space="preserve">
+    <value>連線</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>低通滤波降噪</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="template1des" xml:space="preserve">
+    <value>此模型的所有按鈕和控制桿都佔據了螢幕邊緣。</value>
+  </data>
+  <data name="template2des" xml:space="preserve">
+    <value>类似标准模型，但二进制按钮位置颠倒。</value>
+  </data>
+  <data name="template3des" xml:space="preserve">
+    <value>适合舒适驾驶，半自动换挡。</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>範本</value>
+  </data>
+  <data name="template_def1" xml:space="preserve">
+    <value>預設範本 - 全面且寬闊</value>
+  </data>
+  <data name="template_def2" xml:space="preserve">
+    <value>默认模板 - 完整且宽广（反向垫片）</value>
+  </data>
+  <data name="template_def3" xml:space="preserve">
+    <value>默认顺序 - 汽车用</value>
+  </data>
+  <data name="Trying to reconnect" xml:space="preserve">
+    <value>正在嘗試重新連線...</value>
+  </data>
+  <data name="T_Instructions" xml:space="preserve">
+    <value>指示</value>
+  </data>
+  <data name="TriggerSensitivity" xml:space="preserve">
+    <value>扳機靈敏度</value>
+  </data>
+  <data name="template_def4" xml:space="preserve">
+    <value>默认顺序 - 带方向指示的汽车用</value>
+  </data>
+  <data name="template4des" xml:space="preserve">
+    <value>类似于默认顺序，但使用右侧摇杆代替方向键。</value>
+  </data>
+  <data name="gyro_not_supported" xml:space="preserve">
+    <value>设备不支持陀螺仪，请检查电量是否充足或查阅制造商的技术规格。</value>
+  </data>
+  <data name="template_def5" xml:space="preserve">
+    <value>順序 - 汽車 RT/LT 分離</value>
+  </data>
+  <data name="template_def6" xml:space="preserve">
+    <value>順序 - 汽車 RT/LT 帶方向</value>
+  </data>
+  <data name="template_def7" xml:space="preserve">
+    <value>預設手冊 - 汽車</value>
+  </data>
+  <data name="template_def8" xml:space="preserve">
+    <value>預設手排 - 汽車，單側 RT/LT</value>
+  </data>
+  <data name="template_def9" xml:space="preserve">
+    <value>預設飛行員</value>
+  </data>
+  <data name="template_def10" xml:space="preserve">
+    <value>預設飛行員 - 倒置按鈕</value>
+  </data>
+  <data name="template_def11" xml:space="preserve">
+    <value>Aviator - 合併 RT/LT</value>
+  </data>
+  <data name="template_def12" xml:space="preserve">
+    <value>Aviator RT/LT - 倒置按鈕</value>
+  </data>
+  <data name="template5des" xml:space="preserve">
+    <value>舒適駕駛的理想之選，半自動換檔。油門和煞車分離。</value>
+  </data>
+  <data name="template6des" xml:space="preserve">
+    <value>與 RT/LT 汽車序號類似，但使用方向鍵代替 D-PAD</value>
+  </data>
+  <data name="template7des" xml:space="preserve">
+    <value>非常適合模擬汽車的手排控制。</value>
+  </data>
+  <data name="template8des" xml:space="preserve">
+    <value>與預設手動 - 汽車類似，但一側有加速器和煞車。</value>
+  </data>
+  <data name="template9des" xml:space="preserve">
+    <value>適合航空相關遊戲的理想模型，包括盡可能最大的舒適空間內的所有按鈕。</value>
+  </data>
+  <data name="template10des" xml:space="preserve">
+    <value>與預設飛行員相同，但臉部按鈕相反。</value>
+  </data>
+  <data name="template11des" xml:space="preserve">
+    <value>與標準飛行員類似，但結合了左、右扳機。</value>
+  </data>
+  <data name="template12des" xml:space="preserve">
+    <value>與 Aviator RT/LT 類似，但表面按鈕相反。</value>
+  </data>
+  <data name="abouttitle" xml:space="preserve">
+    <value>一個開源項目</value>
+  </data>
+  <data name="abouttitle1" xml:space="preserve">
+    <value>设置说明</value>
+  </data>
+  <data name="abouttitle2" xml:space="preserve">
+    <value>刷新率： 控制每秒将加速度计数据发送到计算机的频率。</value>
+  </data>
+  <data name="abouttitle3" xml:space="preserve">
+    <value>低通滤波减少： 控制软件对加速度计值不准确的响应程度，值越高震动越强，值越小会出现死区效应。</value>
+  </data>
+  <data name="abouttitle4" xml:space="preserve">
+    <value>触发器灵敏度： 控制 RT/LT 油门和刹车的灵敏度。</value>
+  </data>
+  <data name="abouttitle5" xml:space="preserve">
+    <value>反向摇杆： 为屏幕破裂的手机用户将摇杆方向反转。</value>
+  </data>
+  <data name="abouttitle6" xml:space="preserve">
+    <value>恒定加速度： 松开右触发器时，其位置不会回到 0。此功能也适用于融合触发器。</value>
+  </data>
+  <data name="abouttitle61" xml:space="preserve">
+    <value>交互時振動：當您按下並釋放按鈕或觸發器時，會觸發輕微振動以確認輸入。</value>
+  </data>
+  <data name="abouttitle7" xml:space="preserve">
+    <value>输入说明</value>
+  </data>
+  <data name="abouttitle8" xml:space="preserve">
+    <value>左模拟摇杆和触发器的操作： 输入由加速度计和滚动条定义。</value>
+  </data>
+  <data name="repo" xml:space="preserve">
+    <value>儲存庫</value>
+  </data>
+  <data name="by" xml:space="preserve">
+    <value>經過</value>
+  </data>
+  <data name="opensourcelicenses" xml:space="preserve">
+    <value>開源許可證</value>
+  </data>
+  <data name="PowerSavingMode" xml:space="preserve">
+    <value>节能模式</value>
+  </data>
+  <data name="Vibration" xml:space="preserve">
+    <value>互動時振動</value>
+  </data>
+  <data name="app_name" xml:space="preserve">
+    <value>運動搖桿</value>
+  </data>
+</root>
