@@ -5,7 +5,7 @@ An open-source analog based joystick project that uses the smartphone as a steer
 [![name](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Google_Play_Store_badge_EN.png)
 ](https://play.google.com/store/apps/details?id=com.caiosilva.gravityjoystick&pcampaignid=web_share)
 ---
-[![111](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Uxntitled.png)](https://youtu.be/I_cfgBini-g?si=tUS9wcpPD4CaT_fZ)
+[![111](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Uxntitled.png)](https://youtube.com/shorts/NQMqyPQ18os?si=p46ujCLKhOxtPgvC)
 ---
 Connection is made only by Wi-Fi, using the UDP protocol (with packet loss management) for low latency, the receiver in Windows creates a Virtual Joystick with the profile of the Xbox 360 controller where it receives packets from the smartphone connected to the same network.
 
@@ -16,5 +16,7 @@ Connection is made only by Wi-Fi, using the UDP protocol (with packet loss manag
 - Accelerometer data passes through stabilization and smoothing filters before being delivered to the final axis input.
 ![aab](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/151959.png)
 
-### Project Areas
-[![clientside](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/clientsidebtn.png)](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/tree/main/Client%20Side) [![serverside](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/serversidebtn.png)](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/tree/main/Server%20Side)
+### Project Areas ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+| Client Side | [clientside](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/tree/main/Client%20Side) |
+
+| Server Side | [serverside](https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/tree/main/Server%20Side) |
