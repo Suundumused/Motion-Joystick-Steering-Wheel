@@ -1,15 +1,15 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class BY_Only : ContentView
 {
     private bool _size_allocated { get; set; } = false;
 
-	public BY_Only()
-	{
-		InitializeComponent();
-	}
+    public BY_Only()
+    {
+        InitializeComponent();
+    }
 
     private async void B_Pressed(object sender, EventArgs e)
     {

@@ -25,6 +25,7 @@ public partial class Template2 : ContentPage
         base.OnDisappearing();
         Navigation.RemovePage(this);
     }
+
     protected override bool OnBackButtonPressed()
     {
         return true; // suppress back button

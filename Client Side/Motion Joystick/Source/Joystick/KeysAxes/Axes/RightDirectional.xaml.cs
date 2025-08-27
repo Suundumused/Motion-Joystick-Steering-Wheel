@@ -5,7 +5,7 @@ using Motion_Joystick.Source.Joystick.Map_Keys;
 
 public partial class RightDirectional : ContentView
 {
-    private  double centerX, centerY, radius;
+    private double centerX, centerY, radius;
     private double[] final_pack_value = new double[] { 0.0, 0.0 };
 
     private bool _size_changed = false;

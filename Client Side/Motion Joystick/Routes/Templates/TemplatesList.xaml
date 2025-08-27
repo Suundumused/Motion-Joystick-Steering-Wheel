@@ -1,420 +1,421 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-           xmlns:Common="clr-namespace:Motion_Joystick.Widgets.Common"
-           xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
-           mtk:TearDownBehavior.Cascade="True"
-           x:Class="Motion_Joystick.Routes.Templates.TemplatesList"  
-           xmlns:lang="clr-namespace:Motion_Joystick.Resources.Languages"
-           Title="{x:Static lang:AppResources.Templates}">
-    
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Common="clr-namespace:Motion_Joystick.Widgets.Common"
+             xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
+             mtk:TearDownBehavior.Cascade="True"
+             x:Class="Motion_Joystick.Routes.Templates.TemplatesList"
+             xmlns:lang="clr-namespace:Motion_Joystick.Resources.Languages"
+             Title="{x:Static lang:AppResources.Templates}">
+
     <Grid RowDefinitions="*,Auto" IgnoreSafeArea="True">
         <ScrollView VerticalScrollBarVisibility="Always" Orientation="Vertical" Grid.Row="0">
             <VerticalStackLayout>
 
                 <Grid x:Name="Template_9" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def9}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template9des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template9" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def9}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="HotPink"  
-                        Clicked="template9_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template9des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template9" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="HotPink"
+                            Clicked="template9_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_10" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def10}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template10des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template10" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def10}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="HotPink"  
-                        Clicked="template10_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template10des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template10" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="HotPink"
+                            Clicked="template10_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_11" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def11}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template11des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template11" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def11}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="HotPink"  
-                        Clicked="template11_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template11des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template11" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="HotPink"
+                            Clicked="template11_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_12" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def12}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template12des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template12" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def12}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="HotPink"  
-                        Clicked="template12_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template12des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template12" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="HotPink"
+                            Clicked="template12_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_7" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def7}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template7des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template7" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def7}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="Yellow"  
-                        Clicked="template7_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template7des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template7" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="Yellow"
+                            Clicked="template7_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_8" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def8}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template8des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template8" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def8}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="Yellow"  
-                        Clicked="template8_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template8des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template8" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="Yellow"
+                            Clicked="template8_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_3" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                       Text="{x:Static lang:AppResources.template_def3}"  
-                       VerticalOptions="Center"  
-                       HorizontalOptions="Center"  
-                       FontSize="Subtitle"  
-                       FontAttributes="Bold"  
-                       TextColor="BlanchedAlmond"  
-                       Margin="0,10,0,10"  
-                       Grid.Row="0"/>
-
-                    <Label  
-                       Text="{x:Static lang:AppResources.template3des}"  
-                       VerticalOptions="Center"  
-                       HorizontalOptions="Center"  
-                       HorizontalTextAlignment="Center"  
-                       LineBreakMode="WordWrap"  
-                       FontSize="Small"  
-                       TextColor="BlanchedAlmond"  
-                       Margin="0,10,0,10"  
-                       Grid.Row="1"/>
-
-                    <Button x:Name="template3" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def3}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="CadetBlue"  
-                        Clicked="template3_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label
+                        Text="{x:Static lang:AppResources.template3des}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        FontSize="Small"
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="1" />
+
+                    <Button x:Name="template3" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="CadetBlue"
+                            Clicked="template3_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_5" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def5}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template5des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template5" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def5}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="CadetBlue"  
-                        Clicked="template5_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template5des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template5" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="CadetBlue"
+                            Clicked="template5_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_6" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def6}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
-
-                    <Label Text="{x:Static lang:AppResources.template6des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
-
-                    <Button x:Name="template6" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def6}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="CadetBlue"  
-                        Clicked="template6_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label Text="{x:Static lang:AppResources.template6des}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap"
+                           FontSize="Small"
+                           TextColor="BlanchedAlmond"
+                           Margin="0,10,0,10"
+                           Grid.Row="1" />
+
+                    <Button x:Name="template6" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="CadetBlue"
+                            Clicked="template6_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
                 <Grid x:Name="Template_4" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                       Text="{x:Static lang:AppResources.template_def4}"  
-                       VerticalOptions="Center"  
-                       HorizontalOptions="Center"  
-                       FontSize="Subtitle"  
-                       FontAttributes="Bold"  
-                       TextColor="BlanchedAlmond"  
-                       Margin="0,10,0,10"  
-                       Grid.Row="0"/>
-
-                    <Label  
-                       Text="{x:Static lang:AppResources.template4des}"  
-                       VerticalOptions="Center"  
-                       HorizontalOptions="Center"  
-                       HorizontalTextAlignment="Center"  
-                       LineBreakMode="WordWrap"  
-                       FontSize="Small"  
-                       TextColor="BlanchedAlmond"  
-                       Margin="0,10,0,10"  
-                       Grid.Row="1"/>
-
-                    <Button x:Name="template4" Text=">>"  
-                        FontSize="24"  
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def4}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
                         FontAttributes="Bold"
-                        Style="{StaticResource GlassButtonStyle}"
-                        Margin="0,10,0,10"  
-                        BackgroundColor="CadetBlue"  
-                        Clicked="template4_Clicked"  
-                        Grid.Row="2"/>
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
+
+                    <Label
+                        Text="{x:Static lang:AppResources.template4des}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        FontSize="Small"
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="1" />
+
+                    <Button x:Name="template4" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Style="{StaticResource GlassButtonStyle}"
+                            Margin="0,10,0,10"
+                            BackgroundColor="CadetBlue"
+                            Clicked="template4_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
 
-                <Grid x:Name="Template_2" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">  
-                   <Label  
-                      Text="{x:Static lang:AppResources.template_def1}"  
-                      VerticalOptions="Center"  
-                      HorizontalOptions="Center"  
-                      FontSize="Subtitle"  
-                      FontAttributes="Bold"  
-                      TextColor="BlanchedAlmond"  
-                      Margin="0,10,0,10"  
-                      Grid.Row="0"/>  
+                <Grid x:Name="Template_2" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def1}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
+                        FontAttributes="Bold"
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
 
-                   <Label  
-                      Text="{x:Static lang:AppResources.template1des}"  
-                      VerticalOptions="Center"  
-                      HorizontalOptions="Center"  
-                      HorizontalTextAlignment="Center"  
-                      LineBreakMode="WordWrap"  
-                      FontSize="Small"  
-                      TextColor="BlanchedAlmond"  
-                      Margin="0,10,0,10"  
-                      Grid.Row="1"/>  
+                    <Label
+                        Text="{x:Static lang:AppResources.template1des}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        FontSize="Small"
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="1" />
 
-                   <Button x:Name="template2" Text=">>"  
-                       FontSize="24"  
-                       FontAttributes="Bold"  
-                       Margin="0,10,0,10"
-                       Style="{StaticResource GlassButtonStyle}"
-                       BackgroundColor="LightCoral"  
-                       Clicked="template2_Clicked"  
-                       Grid.Row="2"/>  
+                    <Button x:Name="template2" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Margin="0,10,0,10"
+                            Style="{StaticResource GlassButtonStyle}"
+                            BackgroundColor="LightCoral"
+                            Clicked="template2_Clicked"
+                            Grid.Row="2" />
 
-                   <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />  
-               </Grid>
+                    <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
+                </Grid>
 
                 <Grid x:Name="Template_1" RowDefinitions="Auto,Auto,Auto,Auto" Padding="30,30,30,30">
-                    <Label  
-                        Text="{x:Static lang:AppResources.template_def2}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        FontSize="Subtitle"  
-                        FontAttributes="Bold"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="0"/>
+                    <Label
+                        Text="{x:Static lang:AppResources.template_def2}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="Subtitle"
+                        FontAttributes="Bold"
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="0" />
 
-                    <Label  
-                        Text="{x:Static lang:AppResources.template2des}"  
-                        VerticalOptions="Center"  
-                        HorizontalOptions="Center"  
-                        HorizontalTextAlignment="Center"  
-                        LineBreakMode="WordWrap"  
-                        FontSize="Small"  
-                        TextColor="BlanchedAlmond"  
-                        Margin="0,10,0,10"  
-                        Grid.Row="1"/>
+                    <Label
+                        Text="{x:Static lang:AppResources.template2des}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        FontSize="Small"
+                        TextColor="BlanchedAlmond"
+                        Margin="0,10,0,10"
+                        Grid.Row="1" />
 
-                    <Button x:Name="template1" Text=">>"  
-                         FontSize="24"  
-                         FontAttributes="Bold"  
-                         Margin="0,10,0,10"
-                         Style="{StaticResource GlassButtonStyle}"   
-                         BackgroundColor="LightCoral"  
-                         Clicked="template1_Clicked"  
-                         Grid.Row="2"/>
+                    <Button x:Name="template1" Text=">>"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            Margin="0,10,0,10"
+                            Style="{StaticResource GlassButtonStyle}"
+                            BackgroundColor="LightCoral"
+                            Clicked="template1_Clicked"
+                            Grid.Row="2" />
 
                     <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="Fill" Margin="0,10" Grid.Row="3" />
                 </Grid>
-               
-            </VerticalStackLayout>  
-       </ScrollView>
 
-        <Common:NavBar HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="1"></Common:NavBar>  
-   </Grid>  
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Common:NavBar HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="1"></Common:NavBar>
+    </Grid>
 </ContentPage>

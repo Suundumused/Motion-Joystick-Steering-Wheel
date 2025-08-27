@@ -30,8 +30,8 @@ public partial class SetupConnection : ContentPage
         {
             UpdateConnectButton(false);
         }
-
     }
+
     public Button ConnectButton => ConnectBTN;
 
     private void UpdateConnectButton(bool isConnected)
@@ -112,6 +112,7 @@ public partial class SetupConnection : ContentPage
                         await DisplayAlert(AppResources.Error, AppResources.Invalid_IP_address, "OK");
                     });
                 }
+
                 return;
             }
 
@@ -124,6 +125,7 @@ public partial class SetupConnection : ContentPage
                         await DisplayAlert(AppResources.Error, AppResources.Invalid_port, "OK");
                     });
                 }
+
                 return;
             }
 
@@ -133,7 +135,7 @@ public partial class SetupConnection : ContentPage
 
             ConnectBTN.IsEnabled = false;
 
-            MauiProgram.socketConnection = new Socket_Connection(ip, port);
+            MauiProgram.socketConnection = new SocketConnection(ip, port);
             await MauiProgram.socketConnection.StartAsync(ConnectBTN, PingLabel);
         }
     }

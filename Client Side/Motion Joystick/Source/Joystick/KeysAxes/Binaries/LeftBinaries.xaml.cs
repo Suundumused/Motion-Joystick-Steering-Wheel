@@ -1,13 +1,13 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class LeftBinaries : ContentView
 {
     private bool _size_changed { get; set; } = false;
 
-	public LeftBinaries()
-	{
+    public LeftBinaries()
+    {
         InitializeComponent();
 
         Custom_SetSize();
@@ -64,7 +64,7 @@ public partial class LeftBinaries : ContentView
         }
     }
 
-    private void Custom_SetSize() 
+    private void Custom_SetSize()
     {
         double size_a = 77 * MauiProgram.main_density_preference;
         double size_b = 25 * MauiProgram.main_density_preference;
@@ -83,7 +83,7 @@ public partial class LeftBinaries : ContentView
             Up.WidthRequest = 56;
             Up.HeightRequest = 56;
         }
-        else 
+        else
         {
             Down.WidthRequest = size_a;
             Down.HeightRequest = size_a;

@@ -5,7 +5,7 @@ using KeyAttribute = MessagePack.KeyAttribute;
 
 namespace Motion_Joystick.Source.Joystick.Map_Keys
 {
-    public class Controls : I_Controls
+    public class Controls : IControls
     {
         private CancellationTokenSource? _cancellationTokenSource;
 
@@ -15,7 +15,7 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
         private double _lastAccelerationY = 0;
         private const double NoiseThreshold = 1.0;
 
-        private readonly double minSmoothing = 0.05;  
+        private readonly double minSmoothing = 0.05;
         private readonly double maxSmoothing = 0.1;
 
         private double[] final_pack_value = new double[] { 0.0, 0.0 };
@@ -30,35 +30,35 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
                 {
                     SensorSpeed _sensorSpeed;
 
-                    if (MauiProgram.settingsAcessor.RefreshRate < 8.4) 
+                    if (MauiProgram.settingsAcessor.RefreshRate < 8.4)
                     {
                         if (MauiProgram.settingsAcessor.PowerSavingMode)
                         {
                             _sensorSpeed = SensorSpeed.Game;
                         }
-                        else 
+                        else
                         {
                             _sensorSpeed = SensorSpeed.Fastest;
                         }
                     }
-                    else if (MauiProgram.settingsAcessor.RefreshRate <= 12) 
+                    else if (MauiProgram.settingsAcessor.RefreshRate <= 12)
                     {
-                        if (MauiProgram.settingsAcessor.PowerSavingMode) 
+                        if (MauiProgram.settingsAcessor.PowerSavingMode)
                         {
                             _sensorSpeed = SensorSpeed.UI;
                         }
-                        else 
+                        else
                         {
                             _sensorSpeed = SensorSpeed.Game;
                         }
                     }
                     else
                     {
-                        if (MauiProgram.settingsAcessor.PowerSavingMode) 
+                        if (MauiProgram.settingsAcessor.PowerSavingMode)
                         {
                             _sensorSpeed = SensorSpeed.UI;
                         }
-                        else 
+                        else
                         {
                             _sensorSpeed = SensorSpeed.Game;
                         }
@@ -99,14 +99,19 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
             try
             {
                 _cancellationTokenSource?.Cancel();
-            }catch{}
-                
+            }
+            catch
+            {
+            }
+
             try
             {
                 Accelerometer.Default.ReadingChanged -= Accelerometer_ReadingChanged;
                 Accelerometer.Default.Stop();
             }
-            catch {}
+            catch
+            {
+            }
         }
 
         private void Accelerometer_ReadingChanged(object? sender, AccelerometerChangedEventArgs e)
@@ -118,11 +123,11 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
         {
             int delay;
 
-            if (MauiProgram.settingsAcessor.PowerSavingMode) 
+            if (MauiProgram.settingsAcessor.PowerSavingMode)
             {
                 delay = (int)(MauiProgram.settingsAcessor.RefreshRate * 2);
             }
-            else 
+            else
             {
                 delay = (int)MauiProgram.settingsAcessor.RefreshRate;
             }
@@ -133,7 +138,7 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
             {
                 AccelerometerData reading = _latestData;
 
-                if (_lastAccelerationX != reading.Acceleration.X && _lastAccelerationY != reading.Acceleration.Y) 
+                if (_lastAccelerationX != reading.Acceleration.X && _lastAccelerationY != reading.Acceleration.Y)
                 {
                     double deltaX = Math.Abs(reading.Acceleration.X - _lastAccelerationX);
                     double deltaY = Math.Abs(reading.Acceleration.Y - _lastAccelerationY);
@@ -153,7 +158,12 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
                         }
                         else
                         {
-                            double smoothingFactor = Math.Min(Math.Max((minSmoothing + (Math.Max(deltaX, deltaY) / NoiseThreshold) * (maxSmoothing - minSmoothing)) * MauiProgram.settingsAcessor.Sensibility, minSmoothing), maxSmoothing) * smoothingBase;
+                            double smoothingFactor =
+                                Math.Min(
+                                    Math.Max(
+                                        (minSmoothing + (Math.Max(deltaX, deltaY) / NoiseThreshold) *
+                                            (maxSmoothing - minSmoothing)) * MauiProgram.settingsAcessor.Sensibility,
+                                        minSmoothing), maxSmoothing) * smoothingBase;
 
                             _lastAccelerationX += (x - _lastAccelerationX) * smoothingFactor;
                             _lastAccelerationY += (y - _lastAccelerationY) * smoothingFactor;
@@ -165,6 +175,7 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
                         await Send_axes("w", final_pack_value);
                     }
                 }
+
                 await Task.Delay(delay, token);
             }
 
@@ -175,7 +186,8 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
         {
             if (MauiProgram.socketConnection is not null)
             {
-                await MauiProgram.socketConnection.SendData(new MyMessage { Command = "b", ID = id, Value = true, Reliable = reliable });
+                await MauiProgram.socketConnection.SendData(new MyMessage
+                    { Command = "b", ID = id, Value = true, Reliable = reliable });
             }
 
             VibrateActive();
@@ -185,7 +197,8 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
         {
             if (MauiProgram.socketConnection is not null)
             {
-                await MauiProgram.socketConnection.SendData(new MyMessage { Command = "b", ID = id, Value = false, Reliable = reliable });
+                await MauiProgram.socketConnection.SendData(new MyMessage
+                    { Command = "b", ID = id, Value = false, Reliable = reliable });
             }
 
             VibrateDisable();
@@ -195,7 +208,8 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
         {
             if (MauiProgram.socketConnection is not null)
             {
-                await MauiProgram.socketConnection.SendData(new MyMessage { Command = "a", ID = id, Value = value, Reliable = reliable });
+                await MauiProgram.socketConnection.SendData(new MyMessage
+                    { Command = "a", ID = id, Value = value, Reliable = reliable });
             }
         }
 
@@ -203,7 +217,8 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
         {
             if (MauiProgram.socketConnection is not null)
             {
-                await MauiProgram.socketConnection.SendData(new MyMessage { Command = "c", ID = id, Value = value, Reliable = reliable });
+                await MauiProgram.socketConnection.SendData(new MyMessage
+                    { Command = "c", ID = id, Value = value, Reliable = reliable });
             }
         }
 
@@ -224,16 +239,12 @@ namespace Motion_Joystick.Source.Joystick.Map_Keys
     [MessagePackObject]
     public class MyMessage
     {
-        [Key(0)]
-        public required string Command { get; set; }
+        [Key(0)] public required string Command { get; set; }
 
-        [Key(1)]
-        public required string ID { get; set; }
+        [Key(1)] public required string ID { get; set; }
 
-        [Key(2)]
-        public required dynamic Value { get; set; }
+        [Key(2)] public required dynamic Value { get; set; }
 
-        [Key(3)]
-        public bool Reliable { get; set; }
+        [Key(3)] public bool Reliable { get; set; }
     }
 }

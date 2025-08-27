@@ -1,9 +1,8 @@
 ﻿#if ANDROID
-    using Android.Content.Res;
-    using Android.Graphics;
+using Android.Content.Res;
+using Android.Graphics;
 #endif
 using Microsoft.Maui.Handlers;
-
 using Motion_Joystick.Routes.AsConnection;
 using Motion_Joystick.Routes.Templates;
 
@@ -20,17 +19,20 @@ namespace Motion_Joystick
 
             Logo.HeightRequest = 185 * MauiProgram.main_density_preference;
 
-            #if ANDROID
-                EntryHandler.Mapper.AppendToMapping(nameof(Entry), (IEntryHandler handler, IEntry view) =>
+#if ANDROID
+            EntryHandler.Mapper.AppendToMapping(nameof(Entry),
+                (IEntryHandler handler, IEntry view) =>
                 {
-                    handler.PlatformView.BackgroundTintList = ColorStateList.ValueOf(Android.Graphics.Color.LightSlateGray);
+                    handler.PlatformView.BackgroundTintList =
+                        ColorStateList.ValueOf(Android.Graphics.Color.LightSlateGray);
                 });
-            #endif
+#endif
         }
 
         private async void OnCounterClicked(object sender, EventArgs e)
         {
-            await Launcher.Default.OpenAsync("https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.MD");
+            await Launcher.Default.OpenAsync(
+                "https://github.com/Suundumused/Motion-Joystick-Steering-Wheel/blob/main/Server%20Side/README.MD");
         }
 
         private async void OnOpenSetupClicked(object sender, EventArgs e)

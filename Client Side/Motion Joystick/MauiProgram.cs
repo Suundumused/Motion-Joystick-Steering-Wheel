@@ -2,7 +2,6 @@
 using Motion_Joystick.Source.IO.DataCache;
 using Motion_Joystick.Source.Joystick.Map_Keys;
 using Motion_Joystick.Source.Network;
-
 using System.Diagnostics;
 using CommunityToolkit.Maui;
 
@@ -14,7 +13,7 @@ namespace Motion_Joystick
         public static CancellationTokenSource? _gcLoopCts;
 
         public static SettingsCache settingsAcessor = new SettingsCache();
-        public static Socket_Connection? socketConnection;
+        public static SocketConnection? socketConnection;
 
         public static Controls joyControls = new Controls();
 

@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Motion_Joystick.Source.Joystick.KeysAxis.Binaries.BY_Only">
+             x:Class="Motion_Joystick.Source.Joystick.KeysAxes.Binaries.BY_Only">
 
     <Border BackgroundColor="#53544c" Margin="0" StrokeShape="RoundRectangle 32" Stroke="Beige" StrokeThickness="3">
         <Grid ColumnDefinitions="*,*" RowDefinitions="*">
-            <ImageButton x:Name="B" Source="b.png" Pressed="B_Pressed" Released="B_Released" BackgroundColor="Orange" Grid.Column="0" CornerRadius="0" />
-            <ImageButton x:Name="Y" Source="y.png" Pressed="Y_Pressed" Released="Y_Released" BackgroundColor="Yellow" Grid.Column="1" CornerRadius="0" />
+            <ImageButton x:Name="B" Source="b.png" Pressed="B_Pressed" Released="B_Released" BackgroundColor="Orange"
+                         Grid.Column="0" CornerRadius="0" />
+            <ImageButton x:Name="Y" Source="y.png" Pressed="Y_Pressed" Released="Y_Released" BackgroundColor="Yellow"
+                         Grid.Column="1" CornerRadius="0" />
         </Grid>
     </Border>
 </ContentView>

@@ -1,15 +1,15 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class Right_Only : ContentView
 {
     private bool _size_allocated { get; set; } = false;
 
-	public Right_Only()
-	{
-		InitializeComponent();
-	}
+    public Right_Only()
+    {
+        InitializeComponent();
+    }
 
     private async void Right_Pressed(object sender, EventArgs e)
     {

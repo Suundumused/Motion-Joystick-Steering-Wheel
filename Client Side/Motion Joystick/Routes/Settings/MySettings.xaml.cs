@@ -88,7 +88,7 @@ public partial class MySettings : ContentPage
     private void OnSliderReleased()
     {
         double refresh_value = ValueSlider.Value;
-        MauiProgram.settingsAcessor.RefreshRate =  1 / refresh_value * 1000;
+        MauiProgram.settingsAcessor.RefreshRate = 1 / refresh_value * 1000;
 
         ValueLabel.Text = ((int)Math.Round(refresh_value)).ToString();
     }

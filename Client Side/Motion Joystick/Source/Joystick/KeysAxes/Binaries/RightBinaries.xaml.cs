@@ -1,16 +1,15 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
-
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class RightBinaries : ContentView
 {
-	public RightBinaries()
-	{
-		InitializeComponent();
+    public RightBinaries()
+    {
+        InitializeComponent();
 
         Custom_SetSize();
-	}
+    }
 
     private async void A_Pressed(object sender, EventArgs e)
     {
@@ -59,7 +58,7 @@ public partial class RightBinaries : ContentView
         double a_size = 77 * MauiProgram.main_density_preference;
         double b_size = 25 * MauiProgram.main_density_preference;
 
-        if (a_size < 56) 
+        if (a_size < 56)
         {
             a_size_radius = 56;
 
@@ -75,7 +74,7 @@ public partial class RightBinaries : ContentView
             B.WidthRequest = 56;
             B.HeightRequest = 56;
         }
-        else 
+        else
         {
             a_size_radius = (int)a_size;
 
@@ -92,14 +91,14 @@ public partial class RightBinaries : ContentView
             B.HeightRequest = a_size;
         }
 
-        if (b_size < 16) 
+        if (b_size < 16)
         {
             A.FontSize = 16;
             X.FontSize = 16;
             Y.FontSize = 16;
             B.FontSize = 16;
         }
-        else 
+        else
         {
             A.FontSize = b_size;
             X.FontSize = b_size;

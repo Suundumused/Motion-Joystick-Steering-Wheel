@@ -13,14 +13,14 @@ public partial class NewComboThumbstick : ContentView
 
     private double _start_offset { get; set; } = 0.0;
     private double last_gesture_value { get; set; } = 0.0;
-    private double last_double_final_x_value {get; set;} = 0.0;
+    private double last_double_final_x_value { get; set; } = 0.0;
 
     private bool last_gesture_state { get; set; } = false;
     private bool first_press { get; set; } = false;
 
     public NewComboThumbstick()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
     }
 
     private async void OnPanUpdated(object sender, PanUpdatedEventArgs e)
@@ -63,7 +63,7 @@ public partial class NewComboThumbstick : ContentView
             case GestureStatus.Running:
                 last_gesture_value = e.TotalX;
 
-                if (first_press) 
+                if (first_press)
                 {
                     first_press = false;
 
@@ -147,7 +147,7 @@ public partial class NewComboThumbstick : ContentView
                     await AnalogImage.TranslateTo(0, 0, 100);
 
                     last_double_final_x_value = 0.5;
-                    
+
                     await Controls.Send_axes("17", last_double_final_x_value, true);
                 }
                 else if (last_double_final_x_value < 0.5)
@@ -164,6 +164,7 @@ public partial class NewComboThumbstick : ContentView
                 {
                     last_gesture_state = true;
                 }
+
                 break;
         }
     }

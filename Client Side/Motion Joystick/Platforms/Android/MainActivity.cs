@@ -6,7 +6,10 @@ using AndroidX.AppCompat.App;
 
 namespace Motion_Joystick
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/Maui.SplashTheme", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, LaunchMode = LaunchMode.SingleTop, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
+    [Activity(Label = "@string/app_name", Theme = "@style/Maui.SplashTheme", MainLauncher = true,
+        ScreenOrientation = ScreenOrientation.Portrait, LaunchMode = LaunchMode.SingleTop,
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode |
+                               ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
     public class MainActivity : MauiAppCompatActivity
     {
         public bool _is_S_Version = Build.VERSION.SdkInt >= BuildVersionCodes.S;
@@ -97,7 +100,9 @@ namespace Motion_Joystick
                     MauiProgram._gcLoopCts.Cancel();
                 }
             }
-            catch {}
+            catch
+            {
+            }
         }
     }
 }

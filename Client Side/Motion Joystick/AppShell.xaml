@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <Shell
     x:Class="Motion_Joystick.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -11,33 +12,29 @@
     <ShellContent
         Title="{x:Static lang:AppResources.Home}"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage"/>
-  
+        Route="MainPage" />
+
     <FlyoutItem Title="{x:Static lang:AppResources.Templates}">
-      <ShellContent
-        Title="{x:Static lang:AppResources.Templates}"
-        ContentTemplate="{DataTemplate local:Routes.Templates.TemplatesList}"
-      />
+        <ShellContent
+            Title="{x:Static lang:AppResources.Templates}"
+            ContentTemplate="{DataTemplate local:Routes.Templates.TemplatesList}" />
     </FlyoutItem>
 
-  <FlyoutItem Title="{x:Static lang:AppResources.Settings}">
-    <ShellContent
-      Title="{x:Static lang:AppResources.Settings}"
-      Route="MySettings"
-      ContentTemplate="{DataTemplate local:Routes.Settings.MySettings}"
-    />
-  </FlyoutItem>
-  
+    <FlyoutItem Title="{x:Static lang:AppResources.Settings}">
+        <ShellContent
+            Title="{x:Static lang:AppResources.Settings}"
+            Route="MySettings"
+            ContentTemplate="{DataTemplate local:Routes.Settings.MySettings}" />
+    </FlyoutItem>
+
     <FlyoutItem Title=" " IsEnabled="False">
-      <ShellContent
-        Title=" "
-      />
+        <ShellContent
+            Title=" " />
     </FlyoutItem>
 
     <FlyoutItem Title="{x:Static lang:AppResources.About}">
-      <ShellContent
-        Title="{x:Static lang:AppResources.About}"
-        ContentTemplate="{DataTemplate local:MainPage}"
-      />
+        <ShellContent
+            Title="{x:Static lang:AppResources.About}"
+            ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 </Shell>

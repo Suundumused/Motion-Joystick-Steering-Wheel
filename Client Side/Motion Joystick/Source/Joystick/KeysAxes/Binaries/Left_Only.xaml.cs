@@ -1,15 +1,15 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class Left_Only : ContentView
 {
     private bool _size_allocated { get; set; } = false;
 
-	public Left_Only()
-	{
-		InitializeComponent();
-	}
+    public Left_Only()
+    {
+        InitializeComponent();
+    }
 
     private async void Left_Pressed(object sender, EventArgs e)
     {

@@ -58,10 +58,12 @@ public partial class TemplatesList : ContentPage
     {
         await Navigation.PushAsync(new Template10());
     }
+
     private async void template11_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Template11());
     }
+
     private async void template12_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Template12());

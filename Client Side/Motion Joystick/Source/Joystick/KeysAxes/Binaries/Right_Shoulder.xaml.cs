@@ -1,15 +1,15 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class Right_Shoulder : ContentView //area de colisão
 {
-	public Right_Shoulder()
-	{
-		InitializeComponent();
+    public Right_Shoulder()
+    {
+        InitializeComponent();
 
         Custom_SetSize();
-	}
+    }
 
     private async void Button_Pressed(object sender, EventArgs e)
     {
@@ -25,12 +25,12 @@ public partial class Right_Shoulder : ContentView //area de colisão
     {
         double as_size = 156 * MauiProgram.main_density_preference;
 
-        if (as_size < 127) 
+        if (as_size < 127)
         {
             Pannel.WidthRequest = 127;
             Pannel.HeightRequest = 127;
         }
-        else 
+        else
         {
             Pannel.WidthRequest = as_size;
             Pannel.HeightRequest = as_size;

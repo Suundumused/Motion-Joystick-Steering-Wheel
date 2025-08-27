@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-             x:Class="Motion_Joystick.Source.Joystick.KeysAxis.Binaries.Left_Only">  
+<?xml version="1.0" encoding="utf-8"?>
 
-    <Border BackgroundColor="#53544c" Margin="0" StrokeShape="RoundRectangle 32" Stroke="Beige" StrokeThickness="3">  
-        <Grid>  
-            <Button x:Name="left" Pressed="Left_Pressed" Released="Left_Released" BackgroundColor="DeepPink" CornerRadius="0" Grid.Row="0" Grid.Column="0"/>  
-            <Label Text="&lt;&lt;" FontSize="64" Grid.Row="0" Grid.Column="0" TextColor="DarkSlateGrey" HorizontalOptions="Center" VerticalOptions="Center" Rotation="90"/>  
-        </Grid>  
-    </Border>  
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Motion_Joystick.Source.Joystick.KeysAxes.Binaries.Left_Only">
+
+    <Border BackgroundColor="#53544c" Margin="0" StrokeShape="RoundRectangle 32" Stroke="Beige" StrokeThickness="3">
+        <Grid>
+            <Button x:Name="left" Pressed="Left_Pressed" Released="Left_Released" BackgroundColor="DeepPink"
+                    CornerRadius="0" Grid.Row="0" Grid.Column="0" />
+            <Label Text="&lt;&lt;" FontSize="64" Grid.Row="0" Grid.Column="0" TextColor="DarkSlateGrey"
+                   HorizontalOptions="Center" VerticalOptions="Center" Rotation="90" />
+        </Grid>
+    </Border>
 </ContentView>

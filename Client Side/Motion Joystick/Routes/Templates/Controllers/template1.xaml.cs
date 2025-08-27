@@ -2,9 +2,9 @@ namespace Motion_Joystick.Routes.Templates.Controllers;
 
 public partial class template1 : ContentPage
 {
-	public template1()
-	{
-		InitializeComponent();
+    public template1()
+    {
+        InitializeComponent();
 
         NavigationPage.SetHasNavigationBar(this, false);
 

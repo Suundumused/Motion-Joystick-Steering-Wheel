@@ -1,11 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:binaries="clr-namespace:Motion_Joystick.Source.Joystick.KeysAxis.Binaries"
-            x:Class="Motion_Joystick.Source.Joystick.KeysAxis.Binaries.Pause_Select">  
-   <VerticalStackLayout>
-        <Button x:Name="ButtonA" Pressed="Button_Pressed" Released="Button_Released" Text="&lt;&lt; SELECT" FontAttributes="Bold" Margin="0,0,0,7.5" Rotation="90"></Button>
-        <binaries:ExitButton Rotation="90"/>
-        <Button x:Name="ButtonB" Pressed="Button_Pressed_1" Released="Button_Released_1" Text="START >>" FontAttributes="Bold" Margin="0,7.5,0,0" Rotation="90"></Button>  
-   </VerticalStackLayout>  
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:binaries="clr-namespace:Motion_Joystick.Source.Joystick.KeysAxes.Binaries"
+             x:Class="Motion_Joystick.Source.Joystick.KeysAxes.Binaries.Pause_Select">
+    <VerticalStackLayout>
+        <Button x:Name="ButtonA" Pressed="Button_Pressed" Released="Button_Released" Text="&lt;&lt; SELECT"
+                FontAttributes="Bold" Margin="0,0,0,7.5" Rotation="90">
+        </Button>
+        <binaries:ExitButton Rotation="90" />
+        <Button x:Name="ButtonB" Pressed="Button_Pressed_1" Released="Button_Released_1" Text="START >>"
+                FontAttributes="Bold" Margin="0,7.5,0,0" Rotation="90">
+        </Button>
+    </VerticalStackLayout>
 </ContentView>

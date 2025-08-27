@@ -10,7 +10,7 @@ using System.Net.Sockets;
 
 namespace Motion_Joystick.Source.Network
 {
-    public class Socket_Connection
+    public class SocketConnection
     {
         private readonly string _host;
         private readonly int _port;
@@ -34,7 +34,7 @@ namespace Motion_Joystick.Source.Network
         public Button? _connectButton;
         public Label? _pingLabel;
 
-        public Socket_Connection(string host, int port)
+        public SocketConnection(string host, int port)
         {
             _host = host;
             _port = port;
@@ -73,7 +73,7 @@ namespace Motion_Joystick.Source.Network
 
         private async Task RunCommunicationLoopAsync(CancellationToken token)
         {
-            if (!MauiProgram.joyControls.StartAccelerometer()) 
+            if (!MauiProgram.joyControls.StartAccelerometer())
             {
                 if (Application.Current?.Windows.FirstOrDefault()?.Page is Page currentPage)
                 {
@@ -112,7 +112,7 @@ namespace Motion_Joystick.Source.Network
                 {
                     ShowAlertAsync(AppResources.Error, AppResources.Failed_tocon, "OK");
                     Stop();
-                    
+
                     Console.WriteLine($"Send error: {ex.Message}");
                     return;
                 }
@@ -130,7 +130,7 @@ namespace Motion_Joystick.Source.Network
 
             token.ThrowIfCancellationRequested();
 
-            if (ping_reach_id == -1) 
+            if (ping_reach_id == -1)
             {
                 ping_reach_id = 5;
 
@@ -139,7 +139,7 @@ namespace Motion_Joystick.Source.Network
             }
         }
 
-        private void StopPingAsync(MyMessage as_data) 
+        private void StopPingAsync(MyMessage as_data)
         {
             if (as_data.Value is not int || as_data.Value != ping_reach_id)
             {
@@ -164,7 +164,7 @@ namespace Motion_Joystick.Source.Network
             ping_reach_id = -1;
         }
 
-        private void StopPingForce() 
+        private void StopPingForce()
         {
             timer.Stop();
             ping = timer.ElapsedMilliseconds;
@@ -183,13 +183,14 @@ namespace Motion_Joystick.Source.Network
             ping_reach_id = -1;
         }
 
-        public async Task SendData(MyMessage data) 
+        public async Task SendData(MyMessage data)
         {
             try
             {
                 if (!data.Reliable)
                 {
-                    await _udpSocket.SendToAsync(new ArraySegment<byte>(MessagePackSerializer.Serialize(data)), SocketFlags.None, _remoteEndPoint);
+                    await _udpSocket.SendToAsync(new ArraySegment<byte>(MessagePackSerializer.Serialize(data)),
+                        SocketFlags.None, _remoteEndPoint);
                     return;
                 }
 
@@ -217,13 +218,15 @@ namespace Motion_Joystick.Source.Network
 
                 try
                 {
-                    await _udpSocket.SendToAsync(new ArraySegment<byte>(MessagePackSerializer.Serialize(data)), SocketFlags.None, _remoteEndPoint);
+                    await _udpSocket.SendToAsync(new ArraySegment<byte>(MessagePackSerializer.Serialize(data)),
+                        SocketFlags.None, _remoteEndPoint);
 
                     while (attempts < _maxRetries && !token.IsCancellationRequested)
                     {
                         byte[] buffer = new byte[1024];
 
-                        using CancellationTokenSource? timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(token);
+                        using CancellationTokenSource? timeoutCts =
+                            CancellationTokenSource.CreateLinkedTokenSource(token);
                         timeoutCts.CancelAfter(250);
 
                         try
@@ -236,7 +239,7 @@ namespace Motion_Joystick.Source.Network
                                 StopPingAsync(data);
                                 break;
                             }
-                            else 
+                            else
                             {
                                 Console.WriteLine($"Unexpected response");
                             }
@@ -247,10 +250,11 @@ namespace Motion_Joystick.Source.Network
                         }
 
                         attempts++;
-                        if (attempts == _maxRetries) 
+                        if (attempts == _maxRetries)
                         {
                             StopPingForce();
                         }
+
                         Console.WriteLine($"Attempt {attempts} failed, retrying...");
                     }
 
@@ -264,6 +268,7 @@ namespace Motion_Joystick.Source.Network
                     Console.WriteLine($"Error sending data: {ex.Message}");
                 }
             }
+
             processDataQueueTask = Task.CompletedTask;
         }
 
@@ -272,7 +277,13 @@ namespace Motion_Joystick.Source.Network
             _cts?.Cancel();
             timer.Stop();
 
-            try { _udpSocket?.Dispose(); } catch { }
+            try
+            {
+                _udpSocket?.Dispose();
+            }
+            catch
+            {
+            }
 
             MauiProgram.joyControls.StopAccelerometer();
             MauiProgram.socketConnection = null;

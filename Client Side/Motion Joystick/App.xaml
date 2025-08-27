@@ -1,9 +1,10 @@
-<?xml version = "1.0" encoding = "UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Motion_Joystick"
              x:Class="Motion_Joystick.App">
-    
+
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="GlassButtonStyle" TargetType="Button">
@@ -22,9 +23,9 @@
                 <Setter Property="Shadow">
                     <Setter.Value>
                         <Shadow Brush="Black"
-                            Opacity="0.2"
-                            Offset="2,2"
-                            Radius="6" />
+                                Opacity="0.2"
+                                Offset="2,2"
+                                Radius="6" />
                     </Setter.Value>
                 </Setter>
                 <Setter Property="BorderColor" Value="LightGray" />

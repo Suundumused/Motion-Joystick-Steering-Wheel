@@ -1,39 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:Common="clr-namespace:Motion_Joystick.Widgets.Common"
-            xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
-            mtk:TearDownBehavior.Cascade="True"
-            x:Class="Motion_Joystick.Routes.Settings.MySettings"  
-            xmlns:lang="clr-namespace:Motion_Joystick.Resources.Languages"
-            Title="{x:Static lang:AppResources.Settings}">  
+<?xml version="1.0" encoding="utf-8"?>
 
-   <Grid RowDefinitions="*,Auto,Auto" Padding="20,0,20,0" IgnoreSafeArea="True">  
-       <!-- Conteúdo principal -->  
-       <ScrollView Grid.Row="0" >  
-           <VerticalStackLayout Spacing="20">  
-               <Grid>  
-                   <Grid.ColumnDefinitions>  
-                       <ColumnDefinition Width="0.67*" />  
-                       <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Common="clr-namespace:Motion_Joystick.Widgets.Common"
+             xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
+             mtk:TearDownBehavior.Cascade="True"
+             x:Class="Motion_Joystick.Routes.Settings.MySettings"
+             xmlns:lang="clr-namespace:Motion_Joystick.Resources.Languages"
+             Title="{x:Static lang:AppResources.Settings}">
 
-                    <Label Text="{x:Static lang:AppResources.Refresh_Rate_Label}" Padding="15" Grid.Column="0"/>
-
-                    <Slider x:Name="ValueSlider"  
-                           Grid.Column="1"  
-                           Minimum="60"  
-                           Maximum="144"  
-                           ValueChanged="OnSliderValueChanged"  
-                           HorizontalOptions="Fill" />  
-
-                   <Label x:Name="ValueLabel"  
-                          Grid.Column="2"  
-                          Text="60"  
-                          FontSize="18"  
-                          VerticalOptions="Center" />  
-               </Grid>
+    <Grid RowDefinitions="*,Auto,Auto" Padding="20,0,20,0" IgnoreSafeArea="True">
+        <!-- Conteúdo principal -->
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Spacing="20">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.67*" />
@@ -41,20 +20,20 @@
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="{x:Static lang:AppResources.Sensitivity}" Padding="15" Grid.Column="0"/>
+                    <Label Text="{x:Static lang:AppResources.Refresh_Rate_Label}" Padding="15" Grid.Column="0" />
 
-                    <Slider x:Name="ValueSliderSensibility"  
-                        Grid.Column="1"  
-                        Minimum="1"  
-                        Maximum="2"  
-                        ValueChanged="OnSensibilityValueChanged"  
-                        HorizontalOptions="Fill" />
+                    <Slider x:Name="ValueSlider"
+                            Grid.Column="1"
+                            Minimum="60"
+                            Maximum="144"
+                            ValueChanged="OnSliderValueChanged"
+                            HorizontalOptions="Fill" />
 
-                    <Label x:Name="ValueLabelSensibility"  
-                       Grid.Column="2"  
-                       Text="60"  
-                       FontSize="18"  
-                       VerticalOptions="Center" />
+                    <Label x:Name="ValueLabel"
+                           Grid.Column="2"
+                           Text="60"
+                           FontSize="18"
+                           VerticalOptions="Center" />
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -63,61 +42,83 @@
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="{x:Static lang:AppResources.TriggerSensitivity}" Padding="15" Grid.Column="0"/>
+                    <Label Text="{x:Static lang:AppResources.Sensitivity}" Padding="15" Grid.Column="0" />
 
-                    <Slider x:Name="ValueSliderTriggerSensibility"  
-                        Grid.Column="1"  
-                        Minimum="1.0"  
-                        Maximum="2.0"  
-                        ValueChanged="OnTriggerSensibilityValueChanged"  
-                        HorizontalOptions="Fill" />
+                    <Slider x:Name="ValueSliderSensibility"
+                            Grid.Column="1"
+                            Minimum="1"
+                            Maximum="2"
+                            ValueChanged="OnSensibilityValueChanged"
+                            HorizontalOptions="Fill" />
 
-                    <Label x:Name="ValueLabelTriggerSensibility"  
-                       Grid.Column="2"  
-                       Text="60"  
-                       FontSize="18"  
-                       VerticalOptions="Center" />
-                </Grid>
-                <Grid>  
-                   <!-- Label -->
-                    <Label Text="{x:Static lang:AppResources.Inverted_Joystick}" Padding="15"/>  
-
-                   <!-- Switch -->  
-                   <Switch x:Name="InvertedJoystickSwitch" Toggled="OnUpSideDownToggled"/>  
-               </Grid>
-                <Grid>
-                    <!-- Label -->
-                    <Label Text="{x:Static lang:AppResources.ConstantAcceleration}" Padding="15"/>
-
-                    <!-- Switch -->
-                    <Switch x:Name="ConstantAcceleration" Toggled="OnConstantAccelerationToggled"/>
+                    <Label x:Name="ValueLabelSensibility"
+                           Grid.Column="2"
+                           Text="60"
+                           FontSize="18"
+                           VerticalOptions="Center" />
                 </Grid>
                 <Grid>
-                    <!-- Label -->
-                    <Label Text="{x:Static lang:AppResources.PowerSavingMode}" Padding="15"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.67*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
 
-                    <!-- Switch -->
-                    <Switch x:Name="PowerSavingMode" Toggled="OnPowerSavingModeToggled"/>
+                    <Label Text="{x:Static lang:AppResources.TriggerSensitivity}" Padding="15" Grid.Column="0" />
+
+                    <Slider x:Name="ValueSliderTriggerSensibility"
+                            Grid.Column="1"
+                            Minimum="1.0"
+                            Maximum="2.0"
+                            ValueChanged="OnTriggerSensibilityValueChanged"
+                            HorizontalOptions="Fill" />
+
+                    <Label x:Name="ValueLabelTriggerSensibility"
+                           Grid.Column="2"
+                           Text="60"
+                           FontSize="18"
+                           VerticalOptions="Center" />
                 </Grid>
                 <Grid>
                     <!-- Label -->
-                    <Label Text="{x:Static lang:AppResources.Vibration}" Padding="15"/>
+                    <Label Text="{x:Static lang:AppResources.Inverted_Joystick}" Padding="15" />
 
                     <!-- Switch -->
-                    <Switch x:Name="Vibration" Toggled="OnVibrationToggled"/>
+                    <Switch x:Name="InvertedJoystickSwitch" Toggled="OnUpSideDownToggled" />
                 </Grid>
-            </VerticalStackLayout>  
-       </ScrollView>  
+                <Grid>
+                    <!-- Label -->
+                    <Label Text="{x:Static lang:AppResources.ConstantAcceleration}" Padding="15" />
 
-        <!-- Botão fixo ao final -->  
-       <Button Text="{x:Static lang:AppResources.Reset}"  
-               Clicked="OnResetClicked"  
-               Style="{StaticResource GlassButtonStyle}"
-               TextColor="LightGoldenrodYellow"
-               Grid.Row="1"  
-               HorizontalOptions="Fill"  
-               Margin="0,20,0,0"/>
+                    <!-- Switch -->
+                    <Switch x:Name="ConstantAcceleration" Toggled="OnConstantAccelerationToggled" />
+                </Grid>
+                <Grid>
+                    <!-- Label -->
+                    <Label Text="{x:Static lang:AppResources.PowerSavingMode}" Padding="15" />
 
-       <Common:NavBar HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="2"></Common:NavBar>
-    </Grid>  
+                    <!-- Switch -->
+                    <Switch x:Name="PowerSavingMode" Toggled="OnPowerSavingModeToggled" />
+                </Grid>
+                <Grid>
+                    <!-- Label -->
+                    <Label Text="{x:Static lang:AppResources.Vibration}" Padding="15" />
+
+                    <!-- Switch -->
+                    <Switch x:Name="Vibration" Toggled="OnVibrationToggled" />
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Botão fixo ao final -->
+        <Button Text="{x:Static lang:AppResources.Reset}"
+                Clicked="OnResetClicked"
+                Style="{StaticResource GlassButtonStyle}"
+                TextColor="LightGoldenrodYellow"
+                Grid.Row="1"
+                HorizontalOptions="Fill"
+                Margin="0,20,0,0" />
+
+        <Common:NavBar HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="2"></Common:NavBar>
+    </Grid>
 </ContentPage>

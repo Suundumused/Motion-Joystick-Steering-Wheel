@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-            x:Class="Motion_Joystick.Source.Joystick.KeysAxis.Binaries.RightBinaries">
+<?xml version="1.0" encoding="utf-8"?>
 
-    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto" Rotation="90">
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Motion_Joystick.Source.Joystick.KeysAxes.Binaries.RightBinaries">
 
-        <Button x:Name="A" Text="A" FontAttributes="Bold" Grid.Column="1" Grid.Row="2" Pressed="A_Pressed" Released="A_Released" BackgroundColor="LightGreen" TextColor="#3b3b3b"/>
-        <Button x:Name="X" Text="X" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" Pressed="X_Pressed" Released="X_Released" BackgroundColor="LightBlue" TextColor="#3b3b3b"/>
-        <Button x:Name="Y" Text="Y" FontAttributes="Bold" Grid.Column="1" Grid.Row="0" Pressed="Y_Pressed" Released="Y_Released" BackgroundColor="Yellow" TextColor="#3b3b3b"/>
-        <Button x:Name="B" Text="B" FontAttributes="Bold" Grid.Column="2" Grid.Row="1" Pressed="B_Pressed" Released="B_Released" BackgroundColor="OrangeRed" TextColor="#3b3b3b"/>
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+          ColumnDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto" Rotation="90">
+
+        <Button x:Name="A" Text="A" FontAttributes="Bold" Grid.Column="1" Grid.Row="2" Pressed="A_Pressed"
+                Released="A_Released" BackgroundColor="LightGreen" TextColor="#3b3b3b" />
+        <Button x:Name="X" Text="X" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" Pressed="X_Pressed"
+                Released="X_Released" BackgroundColor="LightBlue" TextColor="#3b3b3b" />
+        <Button x:Name="Y" Text="Y" FontAttributes="Bold" Grid.Column="1" Grid.Row="0" Pressed="Y_Pressed"
+                Released="Y_Released" BackgroundColor="Yellow" TextColor="#3b3b3b" />
+        <Button x:Name="B" Text="B" FontAttributes="Bold" Grid.Column="2" Grid.Row="1" Pressed="B_Pressed"
+                Released="B_Released" BackgroundColor="OrangeRed" TextColor="#3b3b3b" />
     </Grid>
 </ContentView>

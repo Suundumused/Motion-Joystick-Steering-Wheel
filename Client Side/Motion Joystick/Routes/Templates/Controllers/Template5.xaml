@@ -1,24 +1,30 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-            xmlns:binaries="clr-namespace:Motion_Joystick.Source.Joystick.KeysAxis.Binaries"  
-            xmlns:Axis="clr-namespace:Motion_Joystick.Source.Joystick.KeysAxes.Axes"  
-            Shell.NavBarIsVisible="False"  
-            xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"  
-            mtk:TearDownBehavior.Cascade="True"  
-            x:Class="Motion_Joystick.Routes.Templates.Controllers.Template5"  
-            Title="Template5">
+<?xml version="1.0" encoding="utf-8"?>
 
-    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,*,Auto,Auto" IgnoreSafeArea="True" Margin="5,0,0,0" x:Name="Parent">  
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Axis="clr-namespace:Motion_Joystick.Source.Joystick.KeysAxes.Axes"
+             Shell.NavBarIsVisible="False"
+             xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
+             xmlns:binaries="clr-namespace:Motion_Joystick.Source.Joystick.KeysAxes.Binaries"
+             mtk:TearDownBehavior.Cascade="True"
+             x:Class="Motion_Joystick.Routes.Templates.Controllers.Template5"
+             Title="Template5">
 
-       <Axis:LT_Thumbstick Grid.Row="0"  Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="0,5,5,0" x:Name="lT"/>
-       <binaries:Left_Shoulder Rotation="-90" Grid.Row="0" Grid.Column="1" VerticalOptions="Start" HorizontalOptions="End"/>
-       <binaries:AX_Only Grid.Row="1" Grid.Column="0" Margin="0,5,0,0"/>
+    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,*,Auto,Auto" IgnoreSafeArea="True" Margin="5,0,0,0"
+          x:Name="Parent">
 
-       <binaries:Pause_Select Grid.Column="1" Grid.Row="1" Rotation="0" VerticalOptions="End"/>
-       <binaries:LeftBinaries Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,5,0,5"/>  
+        <Axis:LT_Thumbstick Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill"
+                            Margin="0,5,5,0" x:Name="lT" />
+        <binaries:Left_Shoulder Rotation="-90" Grid.Row="0" Grid.Column="1" VerticalOptions="Start"
+                                HorizontalOptions="End" />
+        <binaries:AX_Only Grid.Row="1" Grid.Column="0" Margin="0,5,0,0" />
 
-       <Axis:RT_Thumbstick Grid.Row="3"  Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="0,0,5,5" x:Name="rT"/>  
-       <binaries:Right_Shoulder Grid.Row="3"  Grid.Column="1" HorizontalOptions="End" VerticalOptions="End"/>  
-   </Grid>  
+        <binaries:Pause_Select Grid.Column="1" Grid.Row="1" Rotation="0" VerticalOptions="End" />
+        <binaries:LeftBinaries Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"
+                               Margin="0,5,0,5" />
+
+        <Axis:RT_Thumbstick Grid.Row="3" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill"
+                            Margin="0,0,5,5" x:Name="rT" />
+        <binaries:Right_Shoulder Grid.Row="3" Grid.Column="1" HorizontalOptions="End" VerticalOptions="End" />
+    </Grid>
 </ContentPage>

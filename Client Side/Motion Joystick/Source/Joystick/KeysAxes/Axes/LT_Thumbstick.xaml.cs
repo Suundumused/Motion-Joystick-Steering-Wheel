@@ -12,15 +12,15 @@ public partial class LT_Thumbstick : ContentView
 
     private double _start_offset { get; set; } = 0.0;
     private double last_gesture_value { get; set; } = 0.0;
-    private double last_double_final_x_value {get; set;} = 0.0;
+    private double last_double_final_x_value { get; set; } = 0.0;
 
     private bool last_gesture_state { get; set; } = false;
 
     public required RT_Thumbstick _rT;
 
     public LT_Thumbstick()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
     }
 
     private async void OnPanUpdated(object sender, PanUpdatedEventArgs e)
@@ -51,7 +51,7 @@ public partial class LT_Thumbstick : ContentView
                     }
                 }
 
-                if (MauiProgram.settingsAcessor.ConstantAcceleration) 
+                if (MauiProgram.settingsAcessor.ConstantAcceleration)
                 {
                     await _rT.ForceReset();
                 }

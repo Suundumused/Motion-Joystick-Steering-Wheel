@@ -3,9 +3,10 @@ using Motion_Joystick.Source.Joystick.Map_Keys;
 
 namespace Motion_Joystick.Source.IO.DataCache
 {
-    public class SettingsCache : I_SettingsCache
+    public class SettingsCache : ISettingsCache
     {
         private bool _constantAcceleration = Preferences.Get("ConstantAcceleration", false);
+
         public bool ConstantAcceleration
         {
             get => _constantAcceleration;
@@ -17,6 +18,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private double _refreshRate = Preferences.Get("RefreshRate", 16.666666666666666666666666666667);
+
         public double RefreshRate
         {
             get => _refreshRate;
@@ -26,7 +28,7 @@ namespace Motion_Joystick.Source.IO.DataCache
                 Preferences.Set("RefreshRate", value);
 
                 _ = Controls.Send_config("rr", value / 1000);
-                if (MauiProgram.joyControls._running) 
+                if (MauiProgram.joyControls._running)
                 {
                     MauiProgram.joyControls.StopAccelerometer();
 
@@ -35,7 +37,7 @@ namespace Motion_Joystick.Source.IO.DataCache
                     MauiProgram.joyControls.StartAccelerometer();
                 }
 
-                if (MauiProgram.socketConnection is not null) 
+                if (MauiProgram.socketConnection is not null)
                 {
                     MauiProgram.socketConnection._refresh_rate = (int)Math.Floor(value);
                 }
@@ -43,6 +45,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private double _sensibility = Preferences.Get("Sensibility", 1.5);
+
         public double Sensibility
         {
             get => _sensibility;
@@ -54,6 +57,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private double _triggerSensibility = Preferences.Get("TriggerSensibility", 1.5);
+
         public double TriggerSensibility
         {
             get => _triggerSensibility;
@@ -65,6 +69,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private bool _UpSideDown = Preferences.Get("UpSideDown", false);
+
         public bool UpSideDown
         {
             get => _UpSideDown;
@@ -76,6 +81,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private bool _powerSavingMode = Preferences.Get("PowerSavingMode", false);
+
         public bool PowerSavingMode
         {
             get => _powerSavingMode;
@@ -96,6 +102,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private bool _vibration = Preferences.Get("Vibration", false);
+
         public bool Vibration
         {
             get => _vibration;
@@ -107,6 +114,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private int _serverFieldA = Preferences.Get("ServerFieldA", 192);
+
         public int ServerFieldA
         {
             get => _serverFieldA;
@@ -118,6 +126,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private int _serverFieldB = Preferences.Get("ServerFieldB", 168);
+
         public int ServerFieldB
         {
             get => _serverFieldB;
@@ -129,6 +138,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private int _serverFieldC = Preferences.Get("ServerFieldC", 1);
+
         public int ServerFieldC
         {
             get => _serverFieldC;
@@ -140,6 +150,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private int _serverFieldD = Preferences.Get("ServerFieldD", 2);
+
         public int ServerFieldD
         {
             get => _serverFieldD;
@@ -151,6 +162,7 @@ namespace Motion_Joystick.Source.IO.DataCache
         }
 
         private int _serverPort = Preferences.Get("ServerPort", 3470);
+
         public int ServerPort
         {
             get => _serverPort;

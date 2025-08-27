@@ -1,15 +1,15 @@
 using Motion_Joystick.Source.Joystick.Map_Keys;
 
-namespace Motion_Joystick.Source.Joystick.KeysAxis.Binaries;
+namespace Motion_Joystick.Source.Joystick.KeysAxes.Binaries;
 
 public partial class Left_Shoulder : ContentView //área de colisão
 {
-	public Left_Shoulder()
-	{
-		InitializeComponent();
+    public Left_Shoulder()
+    {
+        InitializeComponent();
 
         Custom_SetSize();
-	}
+    }
 
     private async void Button_Pressed(object sender, EventArgs e)
     {

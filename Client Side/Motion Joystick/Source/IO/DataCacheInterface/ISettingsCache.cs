@@ -1,6 +1,6 @@
 ﻿namespace Motion_Joystick.Source.IO.DataCacheInterface
 {
-    internal interface I_SettingsCache
+    internal interface ISettingsCache
     {
         internal double RefreshRate { get; set; }
         internal double Sensibility { get; set; }

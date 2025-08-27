@@ -8,7 +8,7 @@ public partial class Template12 : ContentPage
 
         NavigationPage.SetHasNavigationBar(this, false);
 
-        if (MauiProgram.settingsAcessor.UpSideDown) 
+        if (MauiProgram.settingsAcessor.UpSideDown)
         {
             Parent.ScaleX = -1;
             Parent.ScaleY = -1;
@@ -25,6 +25,7 @@ public partial class Template12 : ContentPage
         base.OnDisappearing();
         Navigation.RemovePage(this);
     }
+
     protected override bool OnBackButtonPressed()
     {
         return true; // suppress back button
@@ -41,6 +42,7 @@ public partial class Template12 : ContentPage
                 {
                     return -1;
                 }
+
                 return 1;
             }
         }

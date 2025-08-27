@@ -1,7 +1,6 @@
 using Motion_Joystick.Routes.Settings;
 using Motion_Joystick.Routes.Templates;
 using Motion_Joystick.Routes.Info;
-
 using Motion_Joystick.Routes.AsConnection;
 
 namespace Motion_Joystick.Widgets.Common;
@@ -27,7 +26,9 @@ public partial class NavBar : ContentView
 
             Console.WriteLine($"Current page: {currentPage}");
         }
-        else if (Application.Current?.Windows.FirstOrDefault()?.Page is NavigationPage navigationPage) // Updated to use Windows[0].Page
+        else if
+            (Application.Current?.Windows.FirstOrDefault()
+                 ?.Page is NavigationPage navigationPage) // Updated to use Windows[0].Page
         {
             currentPage = navigationPage.CurrentPage;
         }
