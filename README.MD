@@ -8,25 +8,28 @@
 
 ---
 
-[![Demo](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Uxntitled.png)](https://youtube.com/shorts/NQMqyPQ18os?si=p46ujCLKhOxtPgvC)
-
----
+<div align="center">
+    <a href="https://youtube.com/shorts/NQMqyPQ18os?si=p46ujCLKhOxtPgvC" target="_blank">
+        <img src="https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/Uxntitled.png" width="600" alt="Web Widget Preview"/>
+    </a>
+</div>
 
 ## Connection and Communication
 
 The connection is made only via Wi-Fi, using the UDP protocol (with packet loss management) for low latency. The receiver on Windows creates a Virtual Joystick with the Xbox 360 controller profile and receives packets from the smartphone connected to the same network.
 
----
 
-![Diagram](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/2232.png)
+<div align="center">
+    <img src="https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/2232.png" width="600" alt="Web Widget Preview"/>
+</div>
 
-### Recommendations:
+## Recommendations:
 - It is recommended to attach the smartphone to a mobile phone holder with a flexible arm on the table for greater stability. Most models are designed to take up as much screen space as possible.
 - Accelerometer data passes through stabilization and smoothing filters before being delivered to the final axis input.
 
-![Interface Example](https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/151959.png)
-
----
+<div align="center">
+    <img src="https://raw.githubusercontent.com/Suundumused/Motion-Joystick-Steering-Wheel/refs/heads/main/Assets/151959.png" width="600" alt="Web Widget Preview"/>
+</div>
 
 ## Project Areas
 
